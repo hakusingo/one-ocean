@@ -9,12 +9,14 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `沖縄貸切自然体験アドベンチャーツアー｜カヤック・トレッキング・結プログラム・ムイツアーでアドベンチャー体験｜oneocean（ワンオーシャン）`,
+    description: `沖縄貸切自然体験アドベンチャーツアーのワンオーシャン、完全貸切で専門ガイド付き。沖縄本島北部でマングローブカヤック、リバートレッキング、ふれあいを大切にする結プログラム、古琉球の歴史を訪れるアドベンチャー体験！貸切だから自分のペースで冒険できる！お子様からご年配まで参加可能なツアーあり。子連れ家族旅行にもおすすめ`,
+    author: `@hakusingo`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
+    'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

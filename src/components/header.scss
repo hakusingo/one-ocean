@@ -1,0 +1,117 @@
+#top {
+  #sp-menu-open {
+    transform: translateX(-100%);
+    visibility: hidden;
+    will-change: transform;
+    transition: .3s ease-in;
+    li {
+      font-weight: bold;
+      &:not(:last-child) {
+        border-bottom: 1px dashed lightgray;
+      }
+    }
+  }
+  #sp-menu-cover {
+    will-change: transform;
+    visibility: hidden;
+    opacity: 0;
+  }
+  #sp-button-line {
+    div {
+      will-change: transform;
+      transition: .2s ease;
+    }
+  }
+  #sp-button-line.close {
+    & > div:first-child {
+      transform-origin: left;
+      transform: rotate(33deg);
+      padding-left: 1rem;
+    }
+    & > div:nth-child(2) {
+      opacity: 0;
+      visibility: hidden;
+    }
+    & > div:nth-child(3) {
+      transform-origin: left;
+      transform: rotate(-33deg);
+      padding-left: 1rem;
+    }
+  }
+  
+  header {
+    .pc-menu {
+      ul {
+        li:not(:last-child) {
+          margin-right: 1rem;
+          padding-top: .6rem;
+          padding-bottom: .1rem;
+          border-bottom: 3px dashed transparent;
+          will-change: transform;
+          transition: .3s;
+          &:hover {
+            border-bottom: 3px solid white;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width:768px) { 
+      header {
+        .pc-menu {
+          ul {
+            li:not(:last-child) {
+              margin-right: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width:1280px) { 
+      header {
+        .pc-menu {
+          ul {
+            li:not(:last-child) {
+              margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  // サイドバーメニューの後ろの青円
+  #sidebar-left-menu::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #D8F7FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
+  
+  // ヘッダーロゴ、縦スクロールで大きさ変える
+  #header-logo-wide {
+    transform-origin: left top;
+    will-change: transform;
+    transition: .3s ease-in-out;
+    width: 186px;
+    height: auto;
+    &.wider {
+      // width: 140px;
+      transform: scale(.8);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    #header-logo-wide {
+      width: 300px;
+      &.wider {
+        transform: scale(.8);
+      }
+    }
+  }
+}

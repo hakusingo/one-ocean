@@ -1,0 +1,149 @@
+// フロントヒーロー
+#front-hero {
+  .gatsby-image-wrapper {
+    img.hero-image {
+      position: absolute !important;
+    }
+  }
+}
+
+// フロントイントロ
+#front-intro {
+  h3 {
+    span {
+      background:linear-gradient(transparent 60%, #FFF46A 60%);
+      white-space: nowrap;
+    }
+  }
+}
+
+// フロントお知らせ
+#front-news {
+  .news-btn {
+    background-image: linear-gradient(90deg, rgba(41,75,217, 1), rgba(30,164,217, 1));
+  }
+  #news-title {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+  }
+  .news-content:last-of-type {
+    padding-bottom: 2rem !important;
+  }
+}
+
+// フロントメニュー
+#tour-menu {
+  h3 {
+    span {
+      background:linear-gradient(transparent 60%, #FFF46A 60%);
+    }
+  }
+}
+
+// フロント ワンオーシャンの特徴
+#feature .feature {
+  &:nth-child(2) {
+    img {
+      object-position: 50% 0%;
+    }
+  }
+  &:nth-child(5) {
+    img {
+      object-position: 50% 50%;
+    }
+  }
+  .front-feature-number {
+    span {
+      text-shadow: rgba(255, 255, 255, .9) 4px 3px;  
+    }
+  }
+  .feature-subtitle {
+    .triangle {
+      z-index: 0;
+      bottom: -9px;
+      left: 1px;
+      position: absolute;
+      transform: rotate(45deg);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 11px 11px 11px;
+      border-color: transparent transparent #476A26 transparent;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .feature:nth-child(1),.feature:nth-child(4) {
+    padding-top: 6rem!important;
+  }
+  .feature:nth-child(2),.feature:nth-child(5) {
+    padding-top: 4rem!important;
+    transition-delay: 200ms;
+  }
+  .feature:nth-child(3),.feature:nth-child(6) {
+    transition-delay: 400ms;
+  }
+}
+
+#stuff-modal {
+  .modal-animation {
+    animation-name: fadeInAnime;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    will-change: transform;
+  }
+
+  @keyframes fadeInAnime{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+#menu-info {
+  .section-container {
+    th {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+#blog {
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+  #blog-excerpt {
+    p, h3 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      a {
+        display: none;
+      }
+    }
+  }
+  .blog-title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  #blog-contents > div {
+    &:nth-child(2) {
+      transition-delay: 200ms;
+    }
+    &:nth-child(3) {
+      transition-delay: 400ms;
+    }
+  }
+}
+
+#front-emotion {
+  text-shadow: 0 1px 3px gray;
+}

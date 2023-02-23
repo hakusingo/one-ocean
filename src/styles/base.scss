@@ -1,0 +1,151 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #262626;
+}
+
+.bg-pink {
+  background-color: #e74492;
+}
+.bg-navy {
+  background-color: #1E2971;
+}
+.bg-main-blue {
+  background-color: #1EA4D9;
+}
+.bg-main-green {
+  background-color: #7EBF41;
+}
+
+// .font-zenmaru {
+//   font-family: "Zen Maru Gothic", sans-serif;
+// }
+
+// .font-zenmaru-bold {
+//   font-family: "Zen Maru Gothic", sans-serif;
+//   font-weight: bold;
+// }
+
+.section-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+}
+
+.text-shadow {
+  text-shadow: "0px 2px 3px darkgrey"
+}
+
+.fade-in-target{
+  will-change: transform;
+  transition: 1s;
+}
+
+// .swiper-slide-active .slide-img,
+// .swiper-slide-duplicate-active .slide-img,
+// .swiper-slide-prev .slide-img{
+//   animation: zoom 10s linear 0s 1 normal both;  
+// }
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active,
+.swiper-slide-prev {
+  img {
+    animation: zoom 10s linear;  
+    will-change: transform;
+  } 
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 500ms linear both;
+  will-change: transform;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.iso-target {
+  opacity: 0;
+  transition: .3s ease-out;
+  will-change: transform;
+  transform: scale(.6);
+  &.active {
+    opacity: 1;
+    transform: none;
+  }
+  &.fadein-opacity {
+    transform: none;
+    transition: .3s ease-out;
+  }
+  &.fadein-left {
+    transform: translateX(-50px);
+    transition: .5s ease-out;
+    &.active {
+      transform: none;
+    }
+  }
+  &.fadein-right {
+    transform: translateX(50px);
+    transition: .5s ease-out;
+    &.active {
+      transform: none;
+    }
+  }
+}
+
+@keyframes katakata {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+.katakata {
+  animation: katakata 1s infinite step-start;
+  will-change: transform;
+}
+
+// ボートのアニメーション
+@keyframes bort {
+  0% {
+    transform: translateY(0%) rotate(3deg);
+  }
+  25% {
+    transform: translateY(8%);
+  }
+  50% {
+    transform: translateY(0%) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-8%);
+  }
+  100% {
+    transform: translateY(0%) rotate(3deg);
+  }
+}
+.bort1 {
+  animation: bort 3s infinite linear;
+  will-change: transform;
+}
+.bort2 {
+  animation: bort 3.3s infinite linear 1.6s;
+  will-change: transform;
+}

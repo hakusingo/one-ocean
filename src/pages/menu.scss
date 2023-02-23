@@ -1,0 +1,50 @@
+section {
+  overflow-x: hidden;
+}
+
+#menu-intro {
+  & > div {
+    h3 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.2rem;
+      font-weight: 900;
+      span {
+        background:linear-gradient(transparent 60%, #FFF46A 60%);
+      }
+    }
+  }
+}
+
+.schedules:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+#mui-info {
+  span {
+    font-size: 20px;
+    font-weight: 900;
+    background:linear-gradient(transparent 60%, #FFF46A 60%);
+  }
+  .text-navy {
+    font-weight: black !important;
+  }
+}
+
+.border-main-blue {
+  border-color: #1EA4D9;
+}
+.border-main-green {
+  border-color: #7EBF41;
+}
+.border-pink {
+  border-color: #E74492;
+}
+.border-navy {
+  border-color: #1E2971;
+}
+
+#menu-emotion {
+  text-shadow: 2px 2px 3px gray;
+}
