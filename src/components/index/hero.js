@@ -80,12 +80,23 @@ const Hero = () => {
       {/* <div id="front-hero-cover" className="absolute z-20"></div> */}
       <StaticImage
         imgClassName="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
-        className="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
+        className="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10 lg:hidden"
         src="../../images/hero/hero-pic1.jpg"
         alt="ター滝ツアーの写真"
         objectPosition="30% 50%"
         loading="eager"
+        width={500}
         layout="constrained"
+        formats={["auto", "webp", "avif"]}
+      />
+      <StaticImage
+        imgClassName="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
+        className="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10 hidden md:block"
+        src="../../images/hero/hero-pic1.jpg"
+        alt="ター滝ツアーの写真"
+        objectPosition="30% 50%"
+        loading="eager"
+        layout="fullWidth"
         formats={["auto", "webp", "avif"]}
       />
       {/* <Swiper
