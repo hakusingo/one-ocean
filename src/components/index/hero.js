@@ -84,7 +84,6 @@ const Hero = () => {
         src="../../images/hero/hero-pic1.jpg"
         alt="ター滝ツアーの写真"
         objectPosition="30% 50%"
-        placeholder="none"
         loading="eager"
         layout="constrained"
         formats={["auto", "webp", "avif"]}
