@@ -28,12 +28,6 @@ const HeaderLogo = () => {
       }
     }
   }
-  // スクロールイベントの軽量化
-  // https://sologaku.com/make-website/create-throttle-with-javascript/
-  // function myfunc(){
-  //   console.log("スクロールしました！Y座標：" + window.scrollY);
-  //   }
-  // window.addEventListener('scroll', throttle(()=>myfunc(), 300));
   
   const [isWider, setWider] = useState(false)
   const toggleWider = () => {
