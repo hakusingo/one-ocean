@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 
 import "./index.scss"
-import Hero from "../components/index/hero"
+// import Hero from "../components/index/hero"
 import Intro from "../components/index/intro"
 // import News from "../components/index/news"
 import Menu from "../components/index/menu"
@@ -21,7 +21,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Hero />
+      {/* <Hero /> */}
       <Intro />
       {/* <News /> */}
       <Menu />
