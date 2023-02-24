@@ -56,7 +56,7 @@ const Hero = () => {
     })
   },[])
   
-  let temp = "00℃"
+  let temp = "00"
   const fetchWeater = async () => {
     await fetch(`https://api.openweathermap.org/data/2.5/weather/?q=Okinawa&APPID=250f298a0a84d6c21b9d810c9631b248`)
     .then(res => res.json())
