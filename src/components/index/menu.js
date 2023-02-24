@@ -4,8 +4,9 @@ import { Link } from "gatsby"
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { useStaticQuery } from 'gatsby'
 import { graphql } from 'gatsby'
-import TourMenuHeader from "../../components/svg/tour-menu-header"
+// import TourMenuHeader from "../../components/svg/tour-menu-header"
 import { BsCaretRightFill } from "react-icons/bs"
+import frontTourHeader from "../../images/svg/front/menu-header.svg"
 
 import Wave from '../svg/wave'
 
@@ -147,9 +148,10 @@ const Menu = () => {
       <div className="pr-4 pl-4">
         <div className="pt-12 max-w-[500px] mx-auto">
           <h2 className="iso-target">
-            <TourMenuHeader
+            <img src={frontTourHeader} loading="lazy" alt="MENU ツアーメニュー" />
+            {/* <TourMenuHeader
               alt="ツアーメニュー"
-            />
+            /> */}
           </h2>
         </div>
 
@@ -212,61 +214,6 @@ const Menu = () => {
                 </div>
               )
             })
-            // menuContents.map((content, i) => {
-            //   return (
-            //     <div key={i} className="iso-target fadein-opacity col-span-6 pt-12 h-auto max-w-[400px] mx-auto lg:max-w-[500px] w-full">
-            //       <div className="flex justify-center -mt-6 absolute z-10 w-full">
-            //         <p className={`bg-${content.color} whitespace-pre-wrap text-yellow font-bold py-2 px-8 inline-block rounded-[8px] lg:text-[22px]`}>
-            //           {content.subTitle}
-            //         </p>
-            //       </div>
-            //       <GatsbyImage
-            //         className="rounded-[12px] rounded-tr-none rounded-bl-none w-full h-[248px]"
-            //         alt={content.title}
-            //         image={heroJpg[i]}
-            //         width={500}
-            //         objectPosition="50% 66%"
-            //       />
-            //       <div className="bg-white relative rounded-b-[12px]">
-            //         <GatsbyImage
-            //           className="absolute -right-2 w-[80px] h-auto lg:w-[100px] -top-[4rem]"
-            //           image={mapPng[i]}
-            //           alt="集合場所の地図"
-            //         />
-            //         <h3 className="text-[24px] lg:text-[28px] font-bold text-center pt-6">
-            //           <span>
-            //             {content.title}
-            //           </span>
-            //         </h3>
-            //         <p className="pt-6 w-[85%] lg:h-[220px] mx-auto pb-12 whitespace-pre-wrap">
-            //           {content.desc}
-            //         </p>
-            //       </div>
-            //       <div className="flex justify-center">  
-            //         <GatsbyImage
-            //           className="-mt-8 w-[400px] h-[200px]" 
-            //           imgClassName='object-contain'
-            //           image={pngUnder[i]}
-            //           alt={content.title}
-            //         />
-            //       </div>
-            //       <div className="py-12 flex justify-center lg:pt-8">
-            //         <Link
-            //           className={`flex items-center justify-center bg-${content.color} text-white w-[80%] text-center py-2 px-4 rounded-[12px] font-bold`}
-            //           to={content.link}
-            //         >
-            //           <span>
-            //             ツアー内容を見る
-            //           </span>
-            //           <BsCaretRightFill
-            //             className='block'
-            //             size="1.4rem"
-            //           />
-            //         </Link>
-            //       </div>
-            //     </div>
-            //   )
-            // })
           }
         </div>
 

@@ -3,7 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import KayakSingle from '../svg/kayak-single'
 import KayakCouple from '../svg/kayak-couple'
-import StuffHeader from "../svg/stuff-header"
+// import StuffHeader from "../svg/stuff-header"
+import frontStuffHeader from "../../images/svg/front/stuff-header.svg"
 import { BsCaretRightFill } from "react-icons/bs"
 import Wave from '../svg/wave'
 
@@ -24,9 +25,10 @@ const Stuff = (props) => {
       <div className="pr-4 pl-4">
         <div className="pt-12 max-w-[500px] mx-auto mb-12">
           <h2 className="iso-target">
-            <StuffHeader
+            <img src={frontStuffHeader} alt="Stuff スタッフ" loading='lazy' />
+            {/* <StuffHeader
               alt="ワンオーシャンの特徴"
-            />
+            /> */}
           </h2>
         </div>
         {/* <div className="w-full"> */}

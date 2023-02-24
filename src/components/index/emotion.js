@@ -24,7 +24,7 @@ const Emotion = () => {
         className="absolute top-0 left-0 right-0 bottom-0 block lg:hidden"
         src="../../images/emotion/front-emotion2.jpg"
         alt="ター滝"
-        width={400}
+        width={500}
         objectPosition="50% 90%"
         formats={["auto", "webp", "avif"]}
       />

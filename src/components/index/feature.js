@@ -4,7 +4,8 @@ import { GatsbyImage, getImage} from 'gatsby-plugin-image'
 import { useStaticQuery } from 'gatsby'
 import { graphql } from 'gatsby'
 
-import FeatureHeader from "../svg/feature-header"
+// import FeatureHeader from "../svg/feature-header"
+import featureHeader from "../../images/svg/front/feature-header.svg"
 import Wave from '../svg/wave'
 
 const Feature = () => {
@@ -94,9 +95,10 @@ const Feature = () => {
       <div className="pr-8 pl-8">
         <div className="pt-12 max-w-[500px] mx-auto mb-8">
           <h2 className="iso-target">
-            <FeatureHeader
+            <img src={featureHeader} alt="FEATURE ワンオーシャンの特徴" loading='la' />
+            {/* <FeatureHeader
               alt="ワンオーシャンの特徴"
-            />
+            /> */}
           </h2>
         </div>
         <div className="max-w-[1300px] w-full mx-auto lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-12">
