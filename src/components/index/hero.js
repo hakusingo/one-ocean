@@ -189,9 +189,9 @@ const Hero = () => {
         <div className="w-[118px] h-[118px] border-2 border-dashed rounded-[50%]">
           <div className="text-white w-full h-full flex flex-col justify-center items-center">
             <div className="flex justify-center font-semibold">
-              {/* <time dateTime={now} className="text-[12px]">
+              <time dateTime={now} className="text-[12px]">
                 {`${week}.${month}.${today}.${year}`}
-              </time> */}
+              </time>
             </div>
             <div className="flex justify-center">
               <div className="">
