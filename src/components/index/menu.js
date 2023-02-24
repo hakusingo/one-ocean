@@ -168,7 +168,7 @@ const Menu = () => {
                   <div className="">
                     {/* メニュー写真 */}
                     <GatsbyImage
-                      className="w-full h-[248px] rounded-tl-[14px] shadow-xl"
+                      className="w-full h-auto aspect-[7/4] rounded-tl-[14px] shadow-xl"
                       alt={content.title}
                       // src="../../images/tour-menu/menu-kayak.jpg"
                       image={heroJpg[i]}
