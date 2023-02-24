@@ -165,17 +165,17 @@ const Menu = () => {
                       {content.subTitle}
                     </p>
                   </div>
-                  <div className="shadow-xl">
+                  <div className="">
                     {/* メニュー写真 */}
                     <GatsbyImage
-                      className="rounded-[12px] rounded-tr-none rounded-bl-none w-full h-[248px]"
+                      className="w-full h-[248px] rounded-tl-[14px] shadow-xl"
                       alt={content.title}
                       // src="../../images/tour-menu/menu-kayak.jpg"
                       image={heroJpg[i]}
                       width={500}
                       objectPosition="50% 66%"
                     />
-                    <div className="bg-white relative rounded-b-[12px]">
+                    <div className="bg-white relative rounded-b-[14px] shadow-xl">
                       {/* マップ写真 */}
                       <GatsbyImage
                         className="absolute -right-2 w-[80px] h-auto lg:w-[100px] -top-[4rem]"
@@ -204,7 +204,7 @@ const Menu = () => {
                   </div>
                   <div className="py-12 flex justify-center lg:pt-8">
                     <Link
-                      className={`flex items-center justify-center bg-${content.color} text-white w-[80%] text-center shadow-lg py-2 px-4 rounded-[12px] font-bold`}
+                      className={`flex items-center justify-center bg-${content.color} text-white w-[80%] text-center shadow-lg py-2 px-4 rounded-[12px] font-bold shadow-xl`}
                       to={content.link}
                     >
                       <span>
