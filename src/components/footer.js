@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import FooterLogo from "./svg/footer-logo"
 import "./footer.scss"
 import FooterLogoPc from "./svg/footer-logo-pc"
+// import footerPcLogo from "../images/svg/footer/footer-pc-logo.svg"
 
 const footerSpLink = [
   {
@@ -101,6 +102,7 @@ const Footer = () => (
             to={`/`}
           >
             <FooterLogoPc/>
+            {/* <img src={footerPcLogo} alt="" /> */}
           </Link>
           <div className="">
             <h3 className="pt-4 text-main font-semibold">

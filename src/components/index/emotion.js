@@ -37,10 +37,10 @@ const Emotion = () => {
         formats={["auto", "webp", "avif"]}
       />
       <div className="relative z-10 text-white flex flex-col justify-center items-center h-full">
-        <h3 className="text-[18px] font-semibold lg:text-[24px]">
+        <h3 className="text-[18px] font-bold lg:text-[24px] text-shadow">
           沖縄の魅力的な大自然を感じてください
         </h3>
-        <p className="mt-12 text-center lg:text-[20px]">
+        <p className="mt-12 text-center lg:text-[20px] text-shadow">
           沖縄は外に出ると、<br />
           すぐに大自然に出会えます。<br />
           <br />

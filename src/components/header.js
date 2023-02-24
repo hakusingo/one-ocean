@@ -64,15 +64,18 @@ const Header = () => {
     }
   ]
 
+  // SPメニューオープンロジック
   const [ spMenuOpen, setSpMenuOpen ] = useState(false)
   const spMenuClick = () => {
     setSpMenuOpen((prevState) => !prevState)
   }
+  // PCメニューオープンロジック
   const [ pcMenuOpen, setPcMenuOpen ] = useState(false)
   const pcMenuClick = () => {
     setPcMenuOpen((prevState) => !prevState)
   }
 
+  // scrollイベント軽量ロジック
   function myThrottle(fn, delay) {
     let timerId;
     let lastExecTime = 0;
@@ -98,15 +101,14 @@ const Header = () => {
     }
   }
 
+  // ヘッダーロゴ伸縮ロジック
   const [isWider, setWider] = useState(false)
   const toggleWider = () => {
     window.scrollY > 3 ? setWider(true) : setWider(false)
   }
 
+  window.addEventListener('scroll', myThrottle(()=>toggleWider(), 100), { passive: true })
   useEffect(() => {
-
-    window.addEventListener('scroll', myThrottle(()=>toggleWider(), 100), { passive: true })
-
     // インターセクションオブザーバー
     const options = {
       rootMargin: '-25% 0px'

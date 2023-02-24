@@ -96,19 +96,19 @@
   
   // ヘッダーロゴ、縦スクロールで大きさ変える
   #header-logo-wide {
+    display: block;
     transform-origin: left top;
     will-change: transform;
     transition: .3s ease-in-out;
-    width: 186px;
+    width: 180px;
     height: auto;
     &.wider {
-      // width: 140px;
       transform: scale(.8);
     }
   }
   @media screen and (min-width: 1024px) {
     #header-logo-wide {
-      width: 300px;
+      width: 240px;
       &.wider {
         transform: scale(.8);
       }
