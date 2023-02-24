@@ -232,82 +232,82 @@ export const query = graphql`
   query {
     kayakHero: file(relativePath: {eq: "tour-menu/menu-trekking.jpg"}) {
     childImageSharp {
-      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP, AVIF])
+      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP])
     }
   }
     kayakHeroPc: file(relativePath: {eq: "tour-menu/menu-trekking.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
       }
     }
     kayakIntro1: file(relativePath: {eq: "menu/trekking/trekking-intro-pic1.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP])
       }
     }
     kayakIntro2: file(relativePath: {eq: "menu/trekking/trekking-intro-pic3.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP])
       }
     }
     kayakContentsPic1: file(relativePath: {eq: "menu/trekking/trekking-contents-pic1.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakContentsPic2: file(relativePath: {eq: "menu/trekking/trekking-contents-pic2.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakContentsPic3: file(relativePath: {eq: "menu/trekking/trekking-contents-pic3.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakSchedulePic1: file(relativePath: {eq: "menu/kayak/kayak-schedule-contact.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakSchedulePic2: file(relativePath: {eq: "menu/trekking/trekking-schedule-place.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakSchedulePic3: file(relativePath: {eq: "menu/trekking/trekking-schedule-clothes.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakSchedulePic4: file(relativePath: {eq: "menu/trekking/trekking-schedule-lecture.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakSchedulePic5: file(relativePath: {eq: "menu/trekking/trekking-schedule-start.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakSchedulePic6: file(relativePath: {eq: "menu/trekking/trekking-chose.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakSchedulePic7: file(relativePath: {eq: "menu/trekking/trekking-schedule-goal.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakSchedulePic8: file(relativePath: {eq: "menu/trekking/trekking-schedule-photo.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
     kayakEmotion: file(relativePath: {eq: "menu/trekking/emotion.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 1000, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: CONSTRAINED, width: 1000, formats: [AUTO, WEBP])
       }
     }
   }

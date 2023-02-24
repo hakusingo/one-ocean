@@ -34,7 +34,7 @@ const Emotion = () => {
         alt="ター滝"
         objectPosition="50% 90%"
         width={1000}
-        formats={["auto", "webp", "avif"]}
+        formats={["auto", "webp"]}
       />
       <div className="relative z-10 text-white flex flex-col justify-center items-center h-full">
         <h3 className="text-[18px] font-bold lg:text-[24px] text-shadow">

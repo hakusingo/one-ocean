@@ -87,7 +87,7 @@ const Hero = () => {
           layout="constrained"
           width={700}
           placeholder='blurred'
-          formats={["auto", "webp", "avif"]}
+          formats={["auto", "webp"]}
         />
       </div>
       <div className='hidden sm:block'>
@@ -100,7 +100,7 @@ const Hero = () => {
           loading="eager"
           layout='fullWidth'
           placeholder='blurred'
-          formats={["auto", "webp", "avif"]}
+          formats={["auto", "webp"]}
         />
       </div>
       {/* <Swiper

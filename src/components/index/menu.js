@@ -62,42 +62,42 @@ const Menu = () => {
       query {
         kayakPng: file(relativePath: {eq: "tour-menu/menu-kayak-map.png"}) {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED)
+            gatsbyImageData(layout: CONSTRAINED, formats: [AUTO, WEBP])
           }
         }
         trekkingPng: file(relativePath: {eq: "tour-menu/menu-trekking-map.png"}) {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED)
+            gatsbyImageData(layout: CONSTRAINED, formats: [AUTO, WEBP])
           }
         }
         yuiPng: file(relativePath: {eq: "tour-menu/menu-yui-map.png"}) {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED)
+            gatsbyImageData(layout: CONSTRAINED, formats: [AUTO, WEBP])
           }
         }
         muiPng: file(relativePath: {eq: "tour-menu/menu-mui-map.png"}) {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED)
+            gatsbyImageData(layout: CONSTRAINED, formats: [AUTO, WEBP])
           }
         }
         kayakJpg: file(relativePath: {eq: "tour-menu/menu-kayak.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP])
           }
         }
         trekkingJpg: file(relativePath: {eq: "menu/trekking/trekking-intro-pic2.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP])
           }
         }
         yuiJpg: file(relativePath: {eq: "tour-menu/menu-yui.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP])
           }
         }
         muiJpg: file(relativePath: {eq: "tour-menu/menu-mui.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP])
           }
         }
         kayakPngUnder: file(relativePath: {eq: "tour-menu/menu-kayak.png"}) {

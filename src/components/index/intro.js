@@ -52,7 +52,7 @@ const Intro = () => {
               src="../../images/intro/intro-hero.jpg"
               alt="ター滝ツアーを楽しむ親子"
               width={700}
-              formats={["auto", "webp", "avif"]}
+              formats={["auto", "webp"]}
             />
           </div>
         </div>

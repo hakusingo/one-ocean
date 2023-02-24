@@ -44,7 +44,7 @@ const Stuff = (props) => {
                 src="../../images/stuff/stuff-owner.jpg"
                 alt="ワンオーシャンオーナ徳門写真"
                 width={500}
-                formats={["auto", "webp", "avif"]}
+                formats={["auto", "webp"]}
               />
             </div>
             <div className="iso-target fadein-left relative pl-8 max-w-[500px] mx-auto hidden md:block md:py-8">
@@ -53,7 +53,7 @@ const Stuff = (props) => {
                 src="../../images/stuff/stuff-owner-pc.jpg"
                 alt="PC版ワンオーシャンオーナ徳門写真"
                 width={500}
-                formats={["auto", "webp", "avif"]}
+                formats={["auto", "webp"]}
               />
               <svg 
                 className="katakata absolute bottom-[100px] -right-[2rem]"
