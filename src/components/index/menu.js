@@ -82,42 +82,42 @@ const Menu = () => {
         }
         kayakJpg: file(relativePath: {eq: "tour-menu/menu-kayak.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 400, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
           }
         }
         trekkingJpg: file(relativePath: {eq: "menu/trekking/trekking-intro-pic2.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 400, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
           }
         }
         yuiJpg: file(relativePath: {eq: "tour-menu/menu-yui.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 400, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
           }
         }
         muiJpg: file(relativePath: {eq: "tour-menu/menu-mui.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 400, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
           }
         }
         kayakPngUnder: file(relativePath: {eq: "tour-menu/menu-kayak.png"}) {
           childImageSharp {
-            gatsbyImageData(width: 500)
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
           }
         }
         trekkingPngUnder: file(relativePath: {eq: "tour-menu/menu-trekking.png"}) {
           childImageSharp {
-            gatsbyImageData(width: 500)
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
           }
         }
         yuiPngUnder: file(relativePath: {eq: "tour-menu/menu-yui.png"}) {
           childImageSharp {
-            gatsbyImageData(width: 500)
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
           }
         }
         muiPngUnder: file(relativePath: {eq: "tour-menu/menu-mui.png"}) {
           childImageSharp {
-            gatsbyImageData(width: 500)
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
@@ -165,36 +165,41 @@ const Menu = () => {
                       {content.subTitle}
                     </p>
                   </div>
-                  <GatsbyImage
-                    className="rounded-[12px] rounded-tr-none rounded-bl-none w-full shadow-xl h-[248px]"
-                    alt="マングローブカヤック"
-                    // src="../../images/tour-menu/menu-kayak.jpg"
-                    image={heroJpg[i]}
-                    width={500}
-                    objectPosition="50% 66%"
-                  />
-                  <div className="bg-white relative shadow-xl rounded-b-[12px]">
+                  <div className="shadow-xl">
+                    {/* メニュー写真 */}
                     <GatsbyImage
-                      className="absolute -right-2 w-[80px] h-auto lg:w-[100px] -top-[4rem]"
-                      image={mapPng[i]}
-                      alt="名護市大浦湾"
+                      className="rounded-[12px] rounded-tr-none rounded-bl-none w-full h-[248px]"
+                      alt={content.title}
+                      // src="../../images/tour-menu/menu-kayak.jpg"
+                      image={heroJpg[i]}
+                      width={500}
+                      objectPosition="50% 66%"
                     />
-                    <h3 className="text-[24px] lg:text-[28px] font-bold text-center pt-6">
-                      <span>
-                        {content.title}
-                      </span>
-                    </h3>
-                    <p className="pt-6 w-[85%] lg:h-[220px] mx-auto pb-12 whitespace-pre-wrap">
-                      {content.desc}
-                    </p>
+                    <div className="bg-white relative rounded-b-[12px]">
+                      {/* マップ写真 */}
+                      <GatsbyImage
+                        className="absolute -right-2 w-[80px] h-auto lg:w-[100px] -top-[4rem]"
+                        image={mapPng[i]}
+                        alt="メニューマップ"
+                      />
+                      <h3 className="text-[24px] lg:text-[28px] font-bold text-center pt-6">
+                        <span>
+                          {content.title}
+                        </span>
+                      </h3>
+                      <p className="pt-6 w-[85%] lg:h-[220px] mx-auto pb-12 whitespace-pre-wrap">
+                        {content.desc}
+                      </p>
+                    </div>
                   </div>
                   <div className="flex justify-center">  
+                    {/* メニュー下部のPING写真 */}
                     <GatsbyImage
                       className="-mt-8 w-[400px] h-[200px]" 
                       imgClassName='object-contain'
                       // src="../../images/tour-menu/menu-kayak.png"
                       image={pngUnder[i]}
-                      alt="親子カヤック写真"
+                      alt={content.title}
                     />
                   </div>
                   <div className="py-12 flex justify-center lg:pt-8">

@@ -76,18 +76,33 @@ const Hero = () => {
   return (
     <section id="front-hero" className="h-[calc(100vh-60px)] md:h-[calc(100vh-80px)] w-full mx-auto relative -z-10">
       {/* <div id="front-hero-cover" className="absolute z-20"></div> */}
-      <StaticImage
-        imgClassName="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
-        className="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
-        src="../../images/hero/hero-pic1.jpg"
-        alt="ター滝ツアーの写真"
-        objectPosition="30% 50%"
-        loading="eager"
-        layout="constrained"
-        width={1000}
-        placeholder='blurred'
-        formats={["auto", "webp", "avif"]}
-      />
+      <div className='sm:hidden'>
+        <StaticImage
+          imgClassName="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
+          className="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
+          src="../../images/hero/hero-pic1.jpg"
+          alt="ター滝ツアーの写真"
+          objectPosition="30% 50%"
+          loading="eager"
+          layout="constrained"
+          width={700}
+          placeholder='blurred'
+          formats={["auto", "webp", "avif"]}
+        />
+      </div>
+      <div className='hidden sm:block'>
+        <StaticImage
+          imgClassName="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
+          className="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
+          src="../../images/hero/hero-pic1.jpg"
+          alt="ター滝ツアーの写真"
+          objectPosition="30% 50%"
+          loading="eager"
+          layout='fullWidth'
+          placeholder='blurred'
+          formats={["auto", "webp", "avif"]}
+        />
+      </div>
       {/* <Swiper
         className="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
         speed={2000}
