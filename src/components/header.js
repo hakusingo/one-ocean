@@ -107,8 +107,8 @@ const Header = () => {
     window.scrollY > 3 ? setWider(true) : setWider(false)
   }
 
-  window.addEventListener('scroll', myThrottle(()=>toggleWider(), 100), { passive: true })
   useEffect(() => {
+    window.addEventListener('scroll', myThrottle(()=>toggleWider(), 100), { passive: true })
     // インターセクションオブザーバー
     const options = {
       rootMargin: '-25% 0px'
