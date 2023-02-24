@@ -95,35 +95,35 @@ const Feature = () => {
       <div className="pr-8 pl-8">
         <div className="pt-12 max-w-[500px] mx-auto mb-8">
           <h2 className="iso-target">
-            <img src={featureHeader} alt="FEATURE ワンオーシャンの特徴" loading='la' />
+            <img src={featureHeader} className="w-full h-auto" alt="FEATURE ワンオーシャンの特徴" loading='lazy' />
             {/* <FeatureHeader
               alt="ワンオーシャンの特徴"
             /> */}
           </h2>
         </div>
-        <div className="max-w-[1300px] w-full mx-auto lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-12">
+        <div className="max-w-[1300px] w-full mx-auto lg:grid lg:grid-cols-12 lg:gap-x-8 xl:gap-x-12">
           {
             featureImage.map((featureImg, i) => {
               return (
-                <div key={i} className="feature py-8 xl:py-4 iso-target col-span-4 h-auto w-full relative max-w-[500px] mx-auto">
-                  <div className="relative shadow-xl">
+                <div key={i} className="feature py-8 xl:py-4 iso-target col-span-4 h-auto w-full relative max-w-[400px]  mx-auto">
+                  <div className="relative shadow-xl rounded-b-[14px]">
                     <div className="front-feature-number absolute z-10 text-[4rem] -top-[3.4rem] right-4">
                       <span className="text-yellow px-1">0</span>
                       <span className="text-main-green">{ i + 1 }</span>
                     </div>
                     <GatsbyImage
                       image={featureImg}
-                      className="aspect-[3/2] w-full h-auto object-cover"
+                      className="aspect-[3/2] w-full h-auto object-cover rounded-t-[14px]"
                       alt=""
                     />
-                    <div className="relative">
+                    <div className="relative ">
                       <div className="feature-subtitle relative -mt-8 -ml-4 w-full">
                         <div className="triangle"></div>
-                        <h3 className={`bg-main-green text-white text-[20px] py-2 px-4 font-bold w-[100%] whitespace-pre`}>
+                        <h3 className={`bg-main-green shadow text-white text-[20px] lg:text-[1rem] xl:text-[20px] py-2 px-4 font-bold w-[100%] whitespace-pre`}>
                           {featreTitle[i]}
                         </h3>
                       </div>
-                      <p className="px-4 pt-4 pb-8">
+                      <p className="px-4 pt-4 pb-8 leading-[1.6rem]">
                         {featureText[i]}
                       </p>
                     </div>

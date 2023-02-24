@@ -4,8 +4,9 @@ import { Link } from "gatsby"
 
 import { RxCrossCircled } from "react-icons/rx"
 import "./header.scss"
+import headerLogo from "../images/svg/header/header-logo.svg"
 
-import HeaderLogo from "./svg/header-logo" 
+// import HeaderLogo from "./svg/header-logo" 
 
 const Header = () => {
   // SPのメーニューオープン時と、PCのメニューオープンの左側のデータ
@@ -72,7 +73,39 @@ const Header = () => {
     setPcMenuOpen((prevState) => !prevState)
   }
 
+  function myThrottle(fn, delay) {
+    let timerId;
+    let lastExecTime = 0;
+    return () => {
+      const context = this;
+      const args = arguments;
+      let elapsedTime = performance.now() - lastExecTime;
+      const execute = () => {
+        fn.apply(context, args);
+        lastExecTime = performance.now();
+      }
+      if (!timerId) {
+        execute();
+      }
+      if (timerId) {
+        clearTimeout(timerId);
+      }
+      if (elapsedTime > delay) {
+        execute(); 
+      } else {
+        timerId = setTimeout(execute, delay);
+      }
+    }
+  }
+
+  const [isWider, setWider] = useState(false)
+  const toggleWider = () => {
+    window.scrollY > 3 ? setWider(true) : setWider(false)
+  }
+
   useEffect(() => {
+
+    window.addEventListener('scroll', myThrottle(()=>toggleWider(), 100), { passive: true })
 
     // インターセクションオブザーバー
     const options = {
@@ -107,7 +140,8 @@ const Header = () => {
     <header id="header" className="h-[60px] bg-main-blue md:h-[80px] fixed z-50 w-full shadow-xl">
       <div className="pl-4 pr-4 lg:pl-[60px] lg:pr-[60px] mx-auto flex justify-between h-full">
         <Link to={`/`}>
-          <HeaderLogo/>
+          <img id="header-logo-wide" className={isWider ? "wider" : "" } src={headerLogo} alt="ヘッダーロゴ" />
+          {/* <HeaderLogo/> */}
         </Link>
         <div id="sp-menu" className="h-full flex items-center md:hidden">
           <a className="inline-block mr-3" href="https://www.instagram.com/one_ocean/">

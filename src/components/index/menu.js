@@ -148,7 +148,7 @@ const Menu = () => {
       <div className="pr-4 pl-4">
         <div className="pt-12 max-w-[500px] mx-auto">
           <h2 className="iso-target">
-            <img src={frontTourHeader} loading="lazy" alt="MENU ツアーメニュー" />
+            <img src={frontTourHeader} className="w-full h-auto" loading="lazy" alt="MENU ツアーメニュー" />
             {/* <TourMenuHeader
               alt="ツアーメニュー"
             /> */}

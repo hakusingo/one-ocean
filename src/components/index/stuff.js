@@ -1,8 +1,10 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import KayakSingle from '../svg/kayak-single'
-import KayakCouple from '../svg/kayak-couple'
+// import KayakSingle from '../svg/kayak-single'
+// import KayakCouple from '../svg/kayak-couple'
+import kayakCouple from "../../images/svg/front/intro-couple.svg"
+import kayakSingle from "../../images/svg/front/intro-single.svg"
 // import StuffHeader from "../svg/stuff-header"
 import frontStuffHeader from "../../images/svg/front/stuff-header.svg"
 import { BsCaretRightFill } from "react-icons/bs"
@@ -14,18 +16,20 @@ const Stuff = (props) => {
 
   return (
     <section id="stuff" className="relative bg-main-blue pb-20 mt-[-2px]">
-      <KayakCouple
+      <img src={kayakCouple} className="bort1 absolute bottom-4 left-[3%] z-10 sm:left-[40%]" alt="カヤック2人のり" loading='lazy' />
+      {/* <KayakCouple
         className="bort1 absolute bottom-4 left-[3%] z-10 sm:left-[40%]"
         alt="カヤック2人のり"
-      />
-      <KayakSingle
+      /> */}
+      <img src={kayakSingle} alt="カヤック１人のり" className="bort2 absolute bottom-4 left-[38%] sm:left-[54%] lg:left-[50%] z-0" loading='lazy' />
+      {/* <KayakSingle
         className="bort2 absolute bottom-4 left-[38%] sm:left-[54%] lg:left-[50%] z-0"
         alt="カヤック1人のり"
-      />
+      /> */}
       <div className="pr-4 pl-4">
         <div className="pt-12 max-w-[500px] mx-auto mb-12">
           <h2 className="iso-target">
-            <img src={frontStuffHeader} alt="Stuff スタッフ" loading='lazy' />
+            <img src={frontStuffHeader} className="w-full h-auto" alt="Stuff スタッフ" loading='lazy' />
             {/* <StuffHeader
               alt="ワンオーシャンの特徴"
             /> */}
