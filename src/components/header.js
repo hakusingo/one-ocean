@@ -142,7 +142,7 @@ const Header = () => {
     <header id="header" className="h-[60px] bg-main-blue md:h-[80px] fixed z-50 w-full shadow-xl">
       <div className="pl-4 pr-4 lg:pl-[60px] lg:pr-[60px] mx-auto flex justify-between h-full">
         <Link to={`/`}>
-          <img id="header-logo-wide" className={isWider ? "wider" : "" } src={headerLogo} alt="ヘッダーロゴ" />
+          <img id="header-logo-wide" className={isWider ? "wider w-[180px] h-auto lg:w-[240px]" : "w-[180px] h-auto lg:w-[240px]" } src={headerLogo} alt="ヘッダーロゴ" />
           {/* <HeaderLogo/> */}
         </Link>
         <div id="sp-menu" className="h-full flex items-center md:hidden">

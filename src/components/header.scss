@@ -100,18 +100,8 @@
     transform-origin: left top;
     will-change: transform;
     transition: .3s ease-in-out;
-    width: 180px;
-    height: auto;
     &.wider {
       transform: scale(.8);
-    }
-  }
-  @media screen and (min-width: 1024px) {
-    #header-logo-wide {
-      width: 240px;
-      &.wider {
-        transform: scale(.8);
-      }
     }
   }
 }
