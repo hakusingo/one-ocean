@@ -23,7 +23,7 @@ const Hero = () => {
 
   const tempNum = useRef()
 
-  const [weather, setWeather] = useState("")
+  const [weather, setWeather] = useState("clear")
 
   useEffect(() => {
 
@@ -54,26 +54,26 @@ const Hero = () => {
         heroSubtitle2.current.classList.remove("opacity-0")
       })
     })
-  
-    const fetchWeater = async () => {
-      let temp
-      await fetch(`https://api.openweathermap.org/data/2.5/weather/?q=Okinawa&APPID=250f298a0a84d6c21b9d810c9631b248`)
-      .then(res => res.json())
-      .then(result => {
-        temp = (result.main.temp - 273.15)
-        temp = Math.round(temp)
-        tempNum.current.textContent  = `${temp}℃`
-        if(result.weather[0].main === "Clear") {
-          setWeather("clear")
-        } else if(result.weather[0].main === "Clouds") {
-          setWeather("clouds")
-        } else {
-          setWeather("rain")
-        }
-      });
-    }
-    fetchWeater()
   },[])
+  
+  let temp = 0
+  const fetchWeater = async () => {
+    await fetch(`https://api.openweathermap.org/data/2.5/weather/?q=Okinawa&APPID=250f298a0a84d6c21b9d810c9631b248`)
+    .then(res => res.json())
+    .then(result => {
+      temp = (result.main.temp - 273.15)
+      temp = Math.round(temp)
+      tempNum.current.textContent  = `${temp}℃`
+      if(result.weather[0].main === "Clear") {
+        setWeather("clear")
+      } else if(result.weather[0].main === "Clouds") {
+        setWeather("clouds")
+      } else {
+        setWeather("rain")
+      }
+    });
+  }
+  fetchWeater()
 
   return (
     <section id="front-hero" className="h-[calc(100vh-60px)] md:h-[calc(100vh-80px)] w-full mx-auto relative -z-10">
@@ -87,6 +87,7 @@ const Hero = () => {
         loading="eager"
         width={500}
         layout="constrained"
+        placeholder='none'
         formats={["auto", "webp", "avif"]}
       />
       <StaticImage
@@ -96,7 +97,9 @@ const Hero = () => {
         alt="ター滝ツアーの写真"
         objectPosition="30% 50%"
         loading="eager"
-        layout="fullWidth"
+        layout="constrained"
+        width={1000}
+        placeholder='none'
         formats={["auto", "webp", "avif"]}
       />
       {/* <Swiper
