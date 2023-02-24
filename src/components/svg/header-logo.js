@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 const HeaderLogo = () => {
 
-  function throttle(fn, delay) {
+  function myThrottle(fn, delay) {
     let timerId;
     let lastExecTime = 0;
     return () => {
@@ -34,7 +34,7 @@ const HeaderLogo = () => {
     window.scrollY > 3 ? setWider(true) : setWider(false)
   }
   useEffect(() => {
-    window.addEventListener('scroll', throttle(()=>toggleWider(), 200), { passive: true })
+    window.addEventListener('scroll', myThrottle(()=>toggleWider(), 200), { passive: true })
   },[])
 
   return (
