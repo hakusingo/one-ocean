@@ -45,7 +45,7 @@ const Hero = () => {
     fetchWeater()
 
     new Promise((resolve) => {
-      setTimeout(resolve, 1200)
+      setTimeout(resolve, 1000)
     })
     .then(() => {
       return new Promise((resolve) => {
@@ -71,7 +71,11 @@ const Hero = () => {
         heroSubtitle2.current.classList.remove("opacity-0")
         setTimeout(resolve, 500)
       })
+    }).catch(() => {
+      console.log("びっくりぽん")
+      clearInterval()
     })
+
   },[])
   
   return (

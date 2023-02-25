@@ -27,6 +27,7 @@ const Emotion = () => {
         width={300}
         objectPosition="50% 90%"
         formats={["auto", "webp"]}
+        placeholder="blurred"
       />
       <StaticImage
         className="hidden absolute top-0 left-0 right-0 bottom-0 sm:block"
@@ -35,6 +36,7 @@ const Emotion = () => {
         objectPosition="50% 90%"
         width={1000}
         formats={["auto", "webp"]}
+        placeholder="blurred"
       />
       <div className="relative z-10 text-white flex flex-col justify-center items-center h-full">
         <h3 className="text-[18px] font-bold lg:text-[24px] text-shadow">

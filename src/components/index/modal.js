@@ -66,6 +66,9 @@ const Modal = ( props ) => {
                   className="aspect-video lg:aspect-auto mt-2 w-[60%] block mx-auto rounded flex-1 xl:max-w-[300px]"
                   src="../../images/modal/modal-stuff-pic.jpg"
                   alt="徳門 正尚"
+                  placeholder='blurred'
+                  layout='constrained'
+                  width={300}
                 />
                 <div className="w-[80%] mx-auto mt-4 text-main-blue flex-1">
                   <h2 className='text-[18px] text-center xl:text-[24px] pb-1 font-bold'>
