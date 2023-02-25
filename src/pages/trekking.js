@@ -232,12 +232,12 @@ export const query = graphql`
   query {
     kayakHero: file(relativePath: {eq: "tour-menu/menu-trekking.jpg"}) {
     childImageSharp {
-      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP])
+      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
     }
   }
     kayakHeroPc: file(relativePath: {eq: "tour-menu/menu-trekking.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
+        gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP], placeholder: BLURRED)
       }
     }
     kayakIntro1: file(relativePath: {eq: "menu/trekking/trekking-intro-pic1.jpg"}) {

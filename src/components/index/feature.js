@@ -114,9 +114,9 @@ const Feature = () => {
                     <GatsbyImage
                       image={featureImg}
                       className="aspect-[3/2] w-full h-auto object-cover rounded-t-[14px]"
-                      alt=""
+                      alt={`${featreTitle[i]} ワンオーシャンの特徴`}
                     />
-                    <div className="relative ">
+                    <div className="relative">
                       <div className="feature-subtitle relative -mt-8 -ml-4 w-full">
                         <div className="triangle"></div>
                         <h3 className={`bg-main-green shadow text-white text-[20px] lg:text-[1rem] xl:text-[20px] py-2 px-4 font-bold w-[100%] whitespace-pre`}>

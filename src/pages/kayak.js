@@ -27,7 +27,7 @@ import "./index.scss"
 const IntroH3 = () => {
   return (
     <span className='iso-target fadein-opacity'>
-      神秘的なマングローブ林のなかを、<br className='lg:hidden' />
+      神秘的なマングローブ林のなかを、<br className='xl:hidden' />
       みんなで楽しくボウケンしよう!!
     </span>
   )
@@ -57,7 +57,7 @@ const menuContents = [
     alt: "大浦湾マングローブ林"
   },
   {
-    contentTitle: "指定文化財の神秘的なマングローブ林",
+    contentTitle: "指定文化財のマングローブ林",
     contentText: "沖縄県名護市指定文化財である大浦湾のマングローブ林。\nゆったりと進むカヤックからの視点や眺めは最高!! 水中から力強くのびるマングローブを間近に観察できるのは、カヤックならでは最大の魅力です。大自然に囲まれた水上をさっそうと進むのは、いつでも気持ちいい。",
     className: "iso-target fadein-opacity flex-1 lg:mt-0 lg:pt-[2rem] feature relative px-4 my-12 max-w-[500px] mx-auto lg:delay-[300ms]",
     alt: "マングローブカヤック写真"
@@ -244,22 +244,22 @@ export const query = graphql`
   query {
     kayakHero: file(relativePath: {eq: "menu/kayak/kayak-hero-pc.jpg"}) {
     childImageSharp {
-      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP])
+      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
     }
   }
     kayakHeroPc: file(relativePath: {eq: "menu/kayak/kayak-hero-pc.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP])
+        gatsbyImageData(layout: FULL_WIDTH, width: 1000, formats: [AUTO, WEBP], placeholder: BLURRED)
       }
     }
     kayakIntro1: file(relativePath: {eq: "menu/kayak/intro1.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP])
+        gatsbyImageData(layout: CONSTRAINED, width: 200, formats: [AUTO, WEBP])
       }
     }
     kayakIntro2: file(relativePath: {eq: "menu/kayak/intro2.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP])
+        gatsbyImageData(layout: CONSTRAINED, width: 200, formats: [AUTO, WEBP])
       }
     }
     kayakContentsPic1: file(relativePath: {eq: "menu/kayak/kayak-contents-pic1.jpg"}) {

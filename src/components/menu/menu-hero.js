@@ -23,9 +23,9 @@ const MenuHero = ( props ) => {
         <GatsbyImage
           className="absolute top-0 left-0 right-0 bottom-0 md:hidden"
           image={heroImg}
-          alt="メニューヒーロー写真"
-          quality={90}
+          alt={heroTitle}
           loading='eager'
+          placeholder='blurred'
           objectPosition={objectPosition}
         />
         {
@@ -34,18 +34,18 @@ const MenuHero = ( props ) => {
               className="absolute top-0 left-0 right-0 bottom-0 hidden md:block"
               image={heroImgPc}
               objectPosition="50% 80%"
-              alt="メニューPCヒーロー写真"
+              alt={heroTitle}
               loading='eager'
-              quality={90}
+              placeholder='blurred'
             />
           ) : (
             <GatsbyImage
               className="absolute top-0 left-0 right-0 bottom-0 hidden md:block"
               image={heroImgPc}
               objectPosition={objectPosition}
-              alt="メニューPCヒーロー写真"
-              loading='eager'  
-              quality={90}
+              alt={heroTitle}
+              loading='eager'
+              placeholder='blurred'
             />
           )
         }

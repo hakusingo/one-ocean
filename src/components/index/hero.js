@@ -69,6 +69,7 @@ const Hero = () => {
       return new Promise((resolve) => {
         heroSubtitle1.current.classList.remove("opacity-0")
         heroSubtitle2.current.classList.remove("opacity-0")
+        setTimeout(resolve, 500)
       })
     })
   },[])
