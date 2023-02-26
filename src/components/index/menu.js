@@ -102,22 +102,22 @@ const Menu = () => {
         }
         kayakPngUnder: file(relativePath: {eq: "tour-menu/menu-kayak.png"}) {
           childImageSharp {
-            gatsbyImageData(width: 520, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP], placeholder: NONE)
           }
         }
         trekkingPngUnder: file(relativePath: {eq: "tour-menu/menu-trekking.png"}) {
           childImageSharp {
-            gatsbyImageData(width: 520, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP],  placeholder: NONE)
           }
         }
         yuiPngUnder: file(relativePath: {eq: "tour-menu/menu-yui.png"}) {
           childImageSharp {
-            gatsbyImageData(width: 520, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP],  placeholder: NONE)
           }
         }
         muiPngUnder: file(relativePath: {eq: "tour-menu/menu-mui.png"}) {
           childImageSharp {
-            gatsbyImageData(width: 520, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 520, formats: [AUTO, WEBP],  placeholder: NONE)
           }
         }
       }

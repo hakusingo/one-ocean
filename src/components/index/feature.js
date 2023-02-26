@@ -15,32 +15,32 @@ const Feature = () => {
       query {
         feature1: file(relativePath: {eq: "feature/feature-pic1.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 500, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 540, formats: [AUTO, WEBP])
           }
         }
         feature2: file(relativePath: {eq: "feature/feature-pic2.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 500, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 540, formats: [AUTO, WEBP])
           }
         }
         feature3: file(relativePath: {eq: "feature/feature-pic3.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 500, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 540, formats: [AUTO, WEBP])
           }
         }
         feature4: file(relativePath: {eq: "feature/feature-pic4.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 500, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 540, formats: [AUTO, WEBP])
           }
         }
         feature5: file(relativePath: {eq: "feature/feature-pic5.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 500, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 540, formats: [AUTO, WEBP])
           }
         }
         feature6: file(relativePath: {eq: "feature/feature-pic6.jpg"}) {
           childImageSharp {
-            gatsbyImageData(width: 500, formats: [AUTO, WEBP])
+            gatsbyImageData(width: 540, formats: [AUTO, WEBP])
           }
         }
       }
