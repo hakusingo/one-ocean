@@ -12,7 +12,7 @@ const ReservePhoneSns = () => {
           お電話からのご予約
         </h3>
         <a
-          href="tel:090-4471-0313"
+          href="tel:090-4471-7311"
           className='bg-light-blue border-4 border-main-blue text-center inline-block font-semibold text-main-blue mt-4 px-4 rounded-md'>
           <span className='text-[28px] font-bold'>
             090-4471-7311<br/>
@@ -33,7 +33,7 @@ const ReservePhoneSns = () => {
           Lineからのご予約
         </h3>
         <a
-          href="/"
+          href="https://line.me/ti/p/Tz2gy2mV1s"
           className='bg-light-blue border-4 border-main-blue text-center inline-block font-semibold text-main-blue mt-4 px-4 rounded-md'>
           <span className='text-[28px] font-bold'>
             Lineへ<br/>

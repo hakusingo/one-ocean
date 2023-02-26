@@ -153,19 +153,11 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                   </select> 
                 </div>
               </div>
-              <div className='py-2'>
+              {/* <div className='py-2'>
                 <label 
                   htmlFor="eyeSight"
                   className='block mb-2'>
                   視力
-                  {/* <input
-                    className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
-                    type="number"
-                    name={`partEyeSight${i}`}
-                    id={`partEyeSightk${i}`}
-                    value={value[`partEyeSight${i}`] || ``}
-                    onChange={handleChange}
-                  /> */}
                 </label>
                 <select
                   className='w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-2 py-2'
@@ -190,18 +182,10 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                   <option value="0.1">0.1</option>
                   <option value="0.1以下">0.1以下</option>
                 </select>
-              </div>
-              <div className='py-2'>
+              </div> */}
+              {/* <div className='py-2'>
                 <label htmlFor="glasses" className='block mb-2'>
                   コンタクト・メガネ
-                  {/* <input
-                    className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
-                    type="number"
-                    name="glasses"
-                    id={`glassesk${i}`}
-                    value={value[`glasses${i}`] || ``}
-                    onChange={handleChange}
-                  /> */}
                 </label>
                 <select
                   className='w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
@@ -214,7 +198,7 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                   <option value="コンタクトレンズ">コンタクトレンズ</option>
                   <option value="めがね">めがね</option>
                 </select>
-              </div>
+              </div> */}
               {
                 i === 0 || (
                   <button

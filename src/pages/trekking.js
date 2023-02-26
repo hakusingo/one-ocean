@@ -56,7 +56,7 @@ const menuContents = [
     alt: "マングローブカヤック写真"
   },
   {
-    contentTitle: "あなたは水路派？陸路派？\n選べるコースで誰でも楽しめちゃう",
+    contentTitle: "あなたは水路派？陸路派？\n選べるコースで誰でも楽しめる",
     contentText: "亜熱帯の大自然の森のなかにあるター滝\nコースは陸路、水路をチョイス。初心者でも楽しめるのがター滝が人気の理由!!\n親子三世代で楽しめる、ご家族にも人気のツアーです。",
     className: "iso-target fadein-opacity flex-1 lg:mt-0 feature relative px-4 my-12 max-w-[500px] mx-auto lg:delay-[600ms]",
     alt: "マングローブカヤックを楽しむ親子"
@@ -92,7 +92,7 @@ const MenuInfo = [
   },
   {
     title: `備考`,
-    desc: `濡れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\nタオルのレンタル可能です、 ご予約時にお申し込みください。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
+    desc: `濡れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
     linkName: `注意事項`,
     url: `/coution`
   },
@@ -147,21 +147,23 @@ const menuSchedule = [
 
 const MenuEmotionP = () => {
   return (
-    <p className="mt-12 text-center lg:text-[20px]">
-      沖縄県名護市指定文化財である<br/>大浦湾のマングローブ林。<br />
+    <p className="mt-12 text-center w-[70%] mx-auto lg:text-[20px]">
+      沖縄県北部ヤンバルは、壮大な自然、原生林が多く残り「東洋のガラパゴス」と称されるほど。<br />
       <br />
-      ゆったりと進むカヤックからの<br />視点や眺めは最高!!<br/>
+      大自然の中で自分を取り戻す、リバートレッキング！<br/>
       <br />
-      水中から力強くのびるマングローブを<br />間近に観察できるのは、<br />カヤックならでは最大の魅力です。<br />
+      リバートレッキングでは、川の流れに身を任せて進むため、自然との一体感を味わえます。<br />
       <br />
-      大自然に囲まれた水上を<br />さっそうと進むのは<br />いつでも気持ちいい。
+      水に触れることでストレス解消にもなり、リフレッシュ効果が期待!!<br />
+      <br />
+      沖縄特有の亜熱帯の植物、ブロッコリーの森がお出迎えします。ぜひ一緒に別世界へ♫
     </p>
   )
 }
 
 const Kayak = ({ data }) => {
 
-  let heroImg = getImage(data.kayakHero.childImageSharp.gatsbyImageData)
+  // let heroImg = getImage(data.kayakHero.childImageSharp.gatsbyImageData)
   let heroImgPc = getImage(data.kayakHeroPc.childImageSharp.gatsbyImageData)
   let introPic1 = getImage(data.kayakIntro1.childImageSharp.gatsbyImageData)
   let introPic2 = getImage(data.kayakIntro2.childImageSharp.gatsbyImageData)
@@ -183,7 +185,7 @@ const Kayak = ({ data }) => {
   return (
     <Layout>
       <MenuHero
-        heroImg = {heroImg}
+        // heroImg = {heroImg}
         heroImgPc= {heroImgPc}
         heroTitle= "ター滝アドベンチャー"
         heroSubTitle= "世界遺産のター滝をトレッキング"
@@ -215,9 +217,10 @@ const Kayak = ({ data }) => {
         color = "main-blue"
       />
       <MenuEmotion
-        menuEmotionH3 = "マングローブは生物・植物の宝庫です"
+        menuEmotionH3 = "ヤンバルの大自然を身体いっぱい味わって欲しい"
         menuEmotionP = {MenuEmotionP}
         emotion = {emotion}
+        objectPosition = "50% 50%"
       />
     </Layout>
   )
@@ -225,11 +228,11 @@ const Kayak = ({ data }) => {
 
 export const query = graphql`
   query {
-    kayakHero: file(relativePath: {eq: "tour-menu/menu-trekking.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
-    }
-  }
+    # kayakHero: file(relativePath: {eq: "tour-menu/menu-trekking.jpg"}) {
+    #   childImageSharp {
+    #     gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
+    #   }
+    # }
     kayakHeroPc: file(relativePath: {eq: "tour-menu/menu-trekking.jpg"}) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP], placeholder: BLURRED)

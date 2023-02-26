@@ -29,8 +29,8 @@ const ReserveForm = () => {
         sex: "",
         weight: "",
         footSize: "",
-        eyeSight: "",
-        glasses: "無し",
+        // eyeSight: "",
+        // glasses: "無し",
       },
     ],
   },)
@@ -152,7 +152,7 @@ const ReserveForm = () => {
         {/* text - start */}
         <div className="mb-10 md:mb-16 w-[80%] mx-auto max-w-xl">
           <h2 className="text-main-blue text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">ご予約フォーム</h2>
-          <p className='max-w-[400px] mx-auto'>
+          <p className='max-w-[400px] mx-auto leading-[1.6rem]'>
             お急ぎの場合はお手数ですがお電話にてお問い合わせください。<br />
             なお、ツアー催行中などで電話に出られない場合は、こちらから折り返しご連絡させていただきます。
             <span className="max-w-screen-md text-gray-500 mx-auto block">*は記入必須です。</span>
@@ -536,13 +536,6 @@ const ReserveForm = () => {
               <h3 className='mt-8 inline-block mb-4 font-semibold text-main-blue text-[1.2rem] md:text-[1.6rem]'>6. お読みください</h3>
               <div className="">
                 <div className="col-span-8">
-                  <div className="bg-gray-100 mb-4 p-4 rounded-lg">
-                    申込みに関する注意事項
-                    ○キャンセルチャージについて
-                    　・前日12:00までのキャンセルの場合はキャンセルチャージは発生しません。
-                    　・コースご参加前日12:00以降はコース料金の50％、ご連絡無しのキャンセルの場合はコース料金全額お支払いいただきます。
-                    ○お支払いは、現地支払いの現金精算のみとなります。
-                  </div>
                   <div className="bg-gray-100 mb-4 p-4 rounded-lg">
                     携帯メールアドレスのお客様へ
                     ○メール受信制限設定をされている方は「@one-ocean-toku.com」の受信許可をお願いいたします。

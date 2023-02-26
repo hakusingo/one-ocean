@@ -4,7 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 const MenuHero = ( props ) => {
 
   let mui = props.mui
-  let heroImg = props.heroImg
+  // let heroImg = props.heroImg
   let heroImgPc = props.heroImgPc
   let heroTitle = props.heroTitle
   let heroSubTitle = props.heroSubTitle
@@ -20,18 +20,18 @@ const MenuHero = ( props ) => {
   return (
     <section className="w-full relative">
       <div className="h-[340px] relative md:h-[400px] lg:h-[600px]">
-        <GatsbyImage
+        {/* <GatsbyImage
           className="absolute top-0 left-0 right-0 bottom-0 md:hidden"
           image={heroImg}
           alt={heroTitle}
           loading='eager'
           placeholder='blurred'
           objectPosition={objectPosition}
-        />
+        /> */}
         {
           mui ? (
             <GatsbyImage
-              className="absolute top-0 left-0 right-0 bottom-0 hidden md:block"
+              className="absolute top-0 left-0 right-0 bottom-0 block"
               image={heroImgPc}
               objectPosition="50% 80%"
               alt={heroTitle}
@@ -40,7 +40,7 @@ const MenuHero = ( props ) => {
             />
           ) : (
             <GatsbyImage
-              className="absolute top-0 left-0 right-0 bottom-0 hidden md:block"
+              className="absolute top-0 left-0 right-0 bottom-0 block"
               image={heroImgPc}
               objectPosition={objectPosition}
               alt={heroTitle}

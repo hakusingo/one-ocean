@@ -17,16 +17,16 @@ const MenuInformation = (props) => {
         <div className="pt-16 max-w-[500px] mx-auto">
           <h2 className='iso-target'>
             {
-              color === "main-blue" && <img src={kayakInfoHeader} className="" alt="ツアー内容" />
+              color === "main-blue" && <img src={kayakInfoHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "main-green" && <img src={trekkingInfoHeader} className="" alt="ツアー内容" />
+              color === "main-green" && <img src={trekkingInfoHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "pink" && <img src={yuiInfoHeader} className="" alt="ツアー内容" />
+              color === "pink" && <img src={yuiInfoHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "navy" && <img src={muiInfoHeader} className="" alt="ツアー内容" />
+              color === "navy" && <img src={muiInfoHeader} className="" alt="ツアー内容" loading='lazy' />
             }
           </h2>
           <p className='fadein-opacity mt-8 w-[80%] mx-auto text-[14px] mx-w-[400px]'>

@@ -13,15 +13,15 @@ const footerSpLink = [
     url: "/",
   },
   {
-    name: "マングローブ",
+    name: "マングローブカヤック",
     url: "/kayak",
   },
   {
-    name: "トレッキング",
+    name: "ター滝トレッキング",
     url: "/trekking",
   },
   {
-    name: "結プログラム",
+    name: "親子 結プログラム",
     url: "/yui",
   },
   {

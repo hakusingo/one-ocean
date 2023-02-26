@@ -102,7 +102,7 @@ const MenuInfo = [
   },
   {
     title: `備考`,
-    desc: `濡れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\nタオルのレンタル可能です、 ご予約時にお申し込みください。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
+    desc: `濡れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
     linkName: `注意事項`,
     url: `/notes`
   },
@@ -157,23 +157,23 @@ const menuSchedule = [
 
 const MenuEmotionP = () => {
   return (
-    <p className="mt-12 text-center lg:text-[20px]">
-      沖縄県名護市指定文化財である<br/>大浦湾のマングローブ林。<br />
+    <p className="mt-12 text-center w-[70%] mx-auto lg:text-[20px]">
+      沖縄県名護市指定文化財である大浦湾のマングローブ林。<br />
       <br />
-      ゆったりと進むカヤックからの<br />視点や眺めは最高!!<br/>
+      ゆったりと進むカヤックからの視点や眺めは最高!!<br/>
       <br />
-      水中から力強くのびるマングローブを<br />間近に観察できるのは、<br />カヤックならでは最大の魅力です。<br />
+      水中から力強くのびるマングローブを間近に観察できるのは、カヤックならでは最大の魅力です。<br />
       <br />
-      大自然に囲まれた水上を<br />さっそうと進むのは<br />いつでも気持ちいい。<br />
+      大自然に囲まれた水上を、さっそうと進むのはいつでも気持ちいい。<br />
       <br />
-      大人から、子供まで初心者から楽しめる、<br className="md:hidden" />大人気の自然体験アクティビティーです。
+      大人から、子供まで初心者から楽しめる、大人気の自然体験アクティビティーです。
     </p>
   )
 }
 
 const Kayak = ({ data }) => {
 
-  let heroImg = getImage(data.kayakHero.childImageSharp.gatsbyImageData)
+  // let heroImg = getImage(data.kayakHero.childImageSharp.gatsbyImageData)
   let heroImgPc = getImage(data.kayakHeroPc.childImageSharp.gatsbyImageData)
   let introPic1 = getImage(data.kayakIntro1.childImageSharp.gatsbyImageData)
   let introPic2 = getImage(data.kayakIntro2.childImageSharp.gatsbyImageData)
@@ -195,7 +195,7 @@ const Kayak = ({ data }) => {
   return (
     <Layout>
       <MenuHero
-        heroImg = {heroImg}
+        // heroImg = {heroImg}
         heroImgPc= {heroImgPc}
         heroTitle= "マングローブカヤック"
         heroSubTitle= "マングローブを巡る旅、カヤックで楽しもう"
@@ -231,6 +231,7 @@ const Kayak = ({ data }) => {
         menuEmotionH3 = "マングローブ林は生物・植物の宝庫です"
         menuEmotionP = {MenuEmotionP}
         emotion = {emotion}
+        objectPosition = "80% 50%"
       />
     </Layout>
   )
@@ -238,14 +239,14 @@ const Kayak = ({ data }) => {
 
 export const query = graphql`
   query {
-    kayakHero: file(relativePath: {eq: "menu/kayak/kayak-hero-pc.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
-    }
-  }
+  #   kayakHero: file(relativePath: {eq: "menu/kayak/kayak-hero-pc.jpg"}) {
+  #   childImageSharp {
+  #     gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
+  #   }
+  # }
     kayakHeroPc: file(relativePath: {eq: "menu/kayak/kayak-hero-pc.jpg"}) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, width: 1000, formats: [AUTO, WEBP], placeholder: BLURRED)
+        gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP], placeholder: BLURRED)
       }
     }
     kayakIntro1: file(relativePath: {eq: "menu/kayak/intro1.jpg"}) {

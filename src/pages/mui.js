@@ -133,7 +133,7 @@ const MenuInfo = [
   },
   {
     title: `備考`,
-    desc: `汚れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\nタオルのレンタル可能です、 ご予約時にお申し込みください。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
+    desc: `汚れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
     linkName: `注意事項`,
     url: `/coution`
   },
@@ -186,10 +186,10 @@ const menuSchedule = [
 
 const MenuEmotionP = () => {
   return (
-    <p className="mt-12 text-center lg:text-[20px]">
+    <p className="mt-12 text-center w-[70%] mx-auto lg:text-[20px]">
       沖縄の歴史はとてのミステリアスで興味深いものです。<br />
       <br />
-      沖縄の歴史を紐解く探検がライフワークのワンオーシャンだから案内できる<br />
+      沖縄の歴史を紐解く探検がライフワークのワンオーシャンだから案内できる、
       ワンオーシャンオリジナルムイツアー。<br />
       <br />
       自然体験アドベンチャーに歴史探訪がプラスされた、人気急上昇のメニューです。<br />
@@ -201,7 +201,7 @@ const MenuEmotionP = () => {
 
 const Kayak = ({ data }) => {
 
-  let heroImg = getImage(data.kayakHero.childImageSharp.gatsbyImageData)
+  // let heroImg = getImage(data.kayakHero.childImageSharp.gatsbyImageData)
   let heroImgPc = getImage(data.kayakHeroPc.childImageSharp.gatsbyImageData)
   let introPic1 = getImage(data.kayakIntro1.childImageSharp.gatsbyImageData)
   let introPic2 = getImage(data.kayakIntro2.childImageSharp.gatsbyImageData)
@@ -223,7 +223,7 @@ const Kayak = ({ data }) => {
   return (
     <Layout>
       <MenuHero
-        heroImg = {heroImg}
+        // heroImg = {heroImg}
         heroImgPc= {heroImgPc}
         heroTitle= "古代琉球ムイツアー"
         heroSubTitle= {`古琉球の扉をひらくオリジナルツアー`}
@@ -259,6 +259,7 @@ const Kayak = ({ data }) => {
         menuEmotionH3 = "古琉球の扉をひらく"
         menuEmotionP = {MenuEmotionP}
         emotion = {emotion}
+        objectPosition = "75% 50%"
       />
     </Layout>
   )
@@ -266,11 +267,11 @@ const Kayak = ({ data }) => {
 
 export const query = graphql`
   query {
-    kayakHero: file(relativePath: {eq: "menu/mui/mui-hero-pic1.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
-    }
-  }
+    # kayakHero: file(relativePath: {eq: "menu/mui/mui-hero-pic1.jpg"}) {
+    #   childImageSharp {
+    #     gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
+    #   }
+    # }
     kayakHeroPc: file(relativePath: {eq: "menu/mui/mui-hero-pic1.jpg"}) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP], placeholder: BLURRED)

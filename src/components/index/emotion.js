@@ -21,16 +21,7 @@ const Emotion = () => {
         />
       </div>
       <StaticImage
-        className="absolute top-0 left-0 right-0 bottom-0 block sm:hidden"
-        src="../../images/emotion/front-emotion2.jpg"
-        alt="ター滝"
-        width={300}
-        objectPosition="50% 90%"
-        formats={["auto", "webp"]}
-        placeholder="blurred"
-      />
-      <StaticImage
-        className="hidden absolute top-0 left-0 right-0 bottom-0 sm:block"
+        className="absolute top-0 left-0 right-0 bottom-0"
         src="../../images/emotion/front-emotion2.jpg"
         alt="ター滝"
         objectPosition="50% 90%"

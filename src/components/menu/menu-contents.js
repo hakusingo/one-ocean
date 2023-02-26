@@ -25,16 +25,16 @@ const MenuContents = (props) => {
         <div className="iso-target pt-16 max-w-[500px] mx-auto">
           <h2>
             {
-              color === "main-blue" && <img src={kayakContentsHeader} className="" alt="ツアー内容" />
+              color === "main-blue" && <img src={kayakContentsHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "main-green" && <img src={trekkingContentsHeader} className="" alt="ツアー内容" />
+              color === "main-green" && <img src={trekkingContentsHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "pink" && <img src={yuiContentsHeader} className="" alt="ツアー内容" />
+              color === "pink" && <img src={yuiContentsHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "navy" && <img src={muiContentsHeader} className="" alt="ツアー内容" />
+              color === "navy" && <img src={muiContentsHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {/* <img src={kayakContentsHeader} className="w-full h-[200px]" alt="ツアー内容" /> */}
           </h2>

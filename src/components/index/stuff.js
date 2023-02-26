@@ -51,7 +51,7 @@ const Stuff = (props) => {
               <StaticImage
                 className="rounded-[12px] rounded-tr-none rounded-bl-none"
                 src="../../images/stuff/stuff-owner-pc.jpg"
-                alt="PC版ワンオーシャンオーナ徳門写真"
+                alt="PC版ワンオーシャンオーナ徳門"
                 width={500}
                 formats={["auto", "webp"]}
               />

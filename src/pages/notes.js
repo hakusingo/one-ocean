@@ -10,20 +10,9 @@ const Notes = () => {
   return (
     <Layout>
       <section className="w-full relative">
-        <div className="h-[340px] relative md:h-[400px] lg:h-[600px]">
+        <div className="h-[400px] relative md:h-[500px] lg:h-[600px]">
           <StaticImage
-            className="absolute top-0 left-0 right-0 bottom-0 md:hidden"
-            src='../images/notes/notes-hero.jpg'
-            alt="ター滝トレッキング写真"
-            objectPosition="50% 30%"
-            loading="eager"
-            layout="constrained"
-            width={700}
-            placeholder='blurred'
-            formats={["auto", "webp"]}
-          />
-          <StaticImage
-            className="absolute top-0 left-0 right-0 bottom-0 hidden md:block"
+            className="absolute top-0 left-0 right-0 bottom-0"
             src='../images/notes/notes-hero.jpg'
             alt="ター滝トレッキング写真"
             objectPosition="50% 80%"

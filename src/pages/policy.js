@@ -10,20 +10,9 @@ const policy = () => {
   return (
     <Layout>
       <section className="w-full relative">
-        <div className="h-[340px] relative md:h-[400px] lg:h-[600px]">
+        <div className="h-[400px] relative md:h-[500px] lg:h-[600px]">
           <StaticImage
-            className="absolute top-0 left-0 right-0 bottom-0 md:hidden"
-            src='../images/policy/policy-hero.jpg'
-            alt="ター滝トレッキング写真"
-            objectPosition="50% 30%"
-            loading="eager"
-            layout="constrained"
-            width={700}
-            placeholder='blurred'
-            formats={["auto", "webp"]}
-          />
-          <StaticImage
-            className="absolute top-0 left-0 right-0 bottom-0 hidden md:block"
+            className="absolute top-0 left-0 right-0 bottom-0"
             src='../images/policy/policy-hero.jpg'
             alt="ター滝トレッキング写真"
             objectPosition="50% 80%"
@@ -36,6 +25,9 @@ const policy = () => {
         <div className="absolute w-[92%] h-[94%] border-white border-2 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 rounded-[12px] rounded-tr-none"></div>
         <div className="max-w-[900px] rounded-[12px] w-[80%] absolute bg-main-blue text-white bottom-0 left-[50%] -translate-x-[50%]">
           <h2 className='relative py-2 text-center text-[1.4rem] md:text-[2rem] font-semibold'>
+            <span className='py-1 text-[12px] block font-light md:text-8 md:text-[1rem]'>
+              個人情報の取り扱いについて
+            </span>
             プライバシーポリシー
             <div className="absolute rounded-[12px] w-[94%] md:w-[98%] h-[88%] border-white border top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2"></div>
           </h2>

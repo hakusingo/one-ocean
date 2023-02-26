@@ -21,16 +21,16 @@ const MenuSchedule = (props) => {
         <div className="iso-target pt-16 max-w-[500px] mx-auto">
           <h2>
             {
-              color === "main-blue" && <img src={kayakScheduleHeader} className="" alt="ツアー内容" />
+              color === "main-blue" && <img src={kayakScheduleHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "main-green" && <img src={trekkingScheduleHeader} className="" alt="ツアー内容" />
+              color === "main-green" && <img src={trekkingScheduleHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "pink" && <img src={yuiScheduleHeader} className="" alt="ツアー内容" />
+              color === "pink" && <img src={yuiScheduleHeader} className="" alt="ツアー内容" loading='lazy' />
             }
             {
-              color === "navy" && <img src={muiScheduleHeader} className="" alt="ツアー内容" />
+              color === "navy" && <img src={muiScheduleHeader} className="" alt="ツアー内容" loading='lazy' />
             }
           </h2>
         </div>

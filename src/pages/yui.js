@@ -100,7 +100,7 @@ const MenuInfo = [
   },
   {
     title: `備考`,
-    desc: `汚れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\nタオルのレンタル可能です、 ご予約時にお申し込みください。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
+    desc: `汚れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
     linkName: `注意事項`,
     url: `/coution`
   },
@@ -153,8 +153,8 @@ const menuSchedule = [
 
 const MenuEmotionP = () => {
   return (
-    <p className="mt-12 text-center lg:text-[20px]">
-      人と人とのふれあいを大切にすることは、自分自身だけでなく<br/>周りの人々にも影響を与えることができます。<br/>
+    <p className="mt-12 text-center w-[70%] mx-auto lg:text-[20px]">
+      人と人とのふれあいを大切にすることは、自分自身だけでなく周りの人々にも影響を与えることができます。<br/>
       <br />
       一緒に過ごす時間や体験を通じて、仲間意識や協調性も養われます。<br/>
       <br />
@@ -168,7 +168,7 @@ const MenuEmotionP = () => {
 
 const Kayak = ({ data }) => {
 
-  let heroImg = getImage(data.kayakHero.childImageSharp.gatsbyImageData)
+  // let heroImg = getImage(data.kayakHero.childImageSharp.gatsbyImageData)
   let heroImgPc = getImage(data.kayakHeroPc.childImageSharp.gatsbyImageData)
   let introPic1 = getImage(data.kayakIntro1.childImageSharp.gatsbyImageData)
   let introPic2 = getImage(data.kayakIntro2.childImageSharp.gatsbyImageData)
@@ -190,7 +190,7 @@ const Kayak = ({ data }) => {
   return (
     <Layout>
       <MenuHero
-        heroImg = {heroImg}
+        // heroImg = {heroImg}
         heroImgPc= {heroImgPc}
         heroTitle= "親子結プログラム"
         heroSubTitle= {`保育園児・学童クラブ・しょうがい児\nしょうがい者受け入れ可能`}
@@ -224,6 +224,7 @@ const Kayak = ({ data }) => {
         menuEmotionH3 = "「人と自然と繋がる」が冒険のテーマ"
         menuEmotionP = {MenuEmotionP}
         emotion = {emotion}
+        objectPosition = "50% 50%"
       />
     </Layout>
   )
@@ -231,11 +232,11 @@ const Kayak = ({ data }) => {
 
 export const query = graphql`
   query {
-    kayakHero: file(relativePath: {eq: "menu/yui/yui-hero-pc.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
-    }
-  }
+    # kayakHero: file(relativePath: {eq: "menu/yui/yui-hero-pc.jpg"}) {
+    #   childImageSharp {
+    #     gatsbyImageData(layout: CONSTRAINED, width: 400, formats: [AUTO, WEBP], placeholder: BLURRED)
+    #   }
+    # }
     kayakHeroPc: file(relativePath: {eq: "menu/yui/yui-hero-pc.jpg"}) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP], placeholder: BLURRED)
@@ -286,7 +287,7 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
-    kayakSchedulePic4: file(relativePath: {eq: "menu/yui/yui-schedule-lecture.jpg"}) {
+    kayakSchedulePic4: file(relativePath: {eq: "menu/trekking/trekking-schedule-lecture.jpg"}) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
