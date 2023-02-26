@@ -16,10 +16,7 @@ import MenuEmotion from '../components/menu/menu-emotion'
 import MenuInformation from '../components/menu/menu-information'
 import MenuSchedule from '../components/menu/menu-schedule'
 
-import KayakContentsHeader from '../components/svg/trekking-contents-header'
 import KayakInfoHeader from '../components/svg/trekking-info-header'
-import KayakScheduleHeader from "../components/svg/trekking-schedule-header"
-import KayakContactButton from '../components/svg/trekking-contact-button'
 
 import "./menu.scss"
 import "./index.scss"
@@ -205,7 +202,7 @@ const Kayak = ({ data }) => {
         ContentsPic3 = {contentsPic3}
         color = "main-blue"
         menuContents = {menuContents}
-        menuContentsHeader = {KayakContentsHeader}
+
       />
       <MenuInformation
         MenuInfo = {MenuInfo}
@@ -216,8 +213,6 @@ const Kayak = ({ data }) => {
         schedulePics = {schedulePics}
         menuSchedule = {menuSchedule}
         color = "main-blue"
-        contactButtom = {KayakContactButton}
-        menuInfoHeader = {KayakScheduleHeader}
       />
       <MenuEmotion
         menuEmotionH3 = "マングローブは生物・植物の宝庫です"

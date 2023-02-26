@@ -2,21 +2,32 @@ import React from 'react'
 import Wave from '../svg/wave'
 import { Link } from 'gatsby'
 
-// import KayakInfoHeader from '../svg/kayak-info-header'
+import kayakInfoHeader from "../../images/svg/trekking/trekking-info-header.svg"
+import trekkingInfoHeader from "../../images/svg/kayak/kayak-info-header.svg"
+import yuiInfoHeader from "../../images/svg/yui/yui-info-header.svg"
+import muiInfoHeader from "../../images/svg/mui/mui-info-header.svg"
 import { BsCaretRightFill } from "react-icons/bs"
 
 const MenuInformation = (props) => {
   let color = props.color
-  let MenuInfoHeader = props.menuInfoHeader
 
   return (
     <section id="menu-info" className=''>
       <div className="section-container">
         <div className="pt-16 max-w-[500px] mx-auto">
           <h2 className='iso-target'>
-            <MenuInfoHeader
-              alt="詳細情報"
-            />
+            {
+              color === "main-blue" && <img src={kayakInfoHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "main-green" && <img src={trekkingInfoHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "pink" && <img src={yuiInfoHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "navy" && <img src={muiInfoHeader} className="" alt="ツアー内容" />
+            }
           </h2>
           <p className='fadein-opacity mt-8 w-[80%] mx-auto text-[14px] mx-w-[400px]'>
             ワンオーシャンでは、お客様のご要望に答えるツアーもご用意しております。<br />

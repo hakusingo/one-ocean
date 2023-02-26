@@ -1,9 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import FooterLogo from "./svg/footer-logo"
+// import FooterLogo from "./svg/footer-logo"
+import footerSpLogo from "../images/svg/footer/footer-sp-logo.svg"
 import "./footer.scss"
-import FooterLogoPc from "./svg/footer-logo-pc"
+// import FooterLogoPc from "./svg/footer-logo-pc"
+import footerLogoPc from "../images/svg/footer/footer-pc-logo.svg"
 
 const footerSpLink = [
   {
@@ -64,7 +66,7 @@ const Footer = () => (
         <Link
           to={`/`}
           className="inline-block mx-auto mt-6">
-          <FooterLogo/>
+          <img className="h-auto w-4/5 mx-auto" src={footerSpLogo} alt="OneOceanロゴ 沖縄自然体験アドベンチャー ワンオーシャン" />
         </Link>
       </h3>
       <div className="">
@@ -100,7 +102,8 @@ const Footer = () => (
           <Link
             to={`/`}
           >
-            <FooterLogoPc/>
+            {/* <FooterLogoPc/> */}
+            <img src={footerLogoPc} alt="OneOceanロゴ 沖縄自然体験アドベンチャー ワンオーシャン" />
           </Link>
           <div className="">
             <h3 className="pt-4 text-main-blue font-bold">

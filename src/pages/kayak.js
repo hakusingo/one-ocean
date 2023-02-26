@@ -10,16 +10,13 @@ import Layout from '../components/layout'
 // import MenuScheduleHeader from "../components/svg/menu-schedule-header"
 import MenuHero from '../components/menu/menu-hero'
 import MenuIntro from '../components/menu/menu-intro'
-// import KayakInfoHeader from '../components/svg/kayak-info-header'
 import MenuContents from '../components/menu/menu-contents'
 import MenuEmotion from '../components/menu/menu-emotion'
 import MenuInformation from '../components/menu/menu-information'
 import MenuSchedule from '../components/menu/menu-schedule'
 
-import KayakContentsHeader from '../components/svg/kayak-contents-header'
 import KayakInfoHeader from '../components/svg/kayak-info-header'
-import KayakScheduleHeader from "../components/svg/kayak-schedule-header"
-import KayakContactButton from '../components/svg/kayak-contact-button'
+
 
 import "./menu.scss"
 import "./index.scss"
@@ -217,7 +214,8 @@ const Kayak = ({ data }) => {
         ContentsPic3 = {contentsPic3}
         color = "main-green"
         menuContents = {menuContents}
-        menuContentsHeader = {KayakContentsHeader}
+        // menuContentsHeader = {kayakContentsHeader}
+        // menuSvgHeader = {kayakContentsHeader}
       />
       <MenuInformation
         MenuInfo = {MenuInfo}
@@ -228,8 +226,6 @@ const Kayak = ({ data }) => {
         schedulePics = {schedulePics}
         menuSchedule = {menuSchedule}
         color = "main-green"
-        contactButtom = {KayakContactButton}
-        menuInfoHeader = {KayakScheduleHeader}
       />
       <MenuEmotion
         menuEmotionH3 = "マングローブ林は生物・植物の宝庫です"

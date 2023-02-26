@@ -72,7 +72,6 @@ const Hero = () => {
         setTimeout(resolve, 500)
       })
     }).catch(() => {
-      console.log("びっくりぽん")
       clearInterval()
     })
 

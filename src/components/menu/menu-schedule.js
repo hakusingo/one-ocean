@@ -1,24 +1,37 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
-
-// import MenuScheduleHeader from '../svg/menu-schedule-header'
+import kayakScheduleHeader from "../../images/svg/trekking/trekking-schedule-header.svg"
+import trekkingScheduleHeader from "../../images/svg/kayak/kayak-schedule-header.svg"
+import yuiScheduleHeader from "../../images/svg/yui/yui-schedule-header.svg"
+import muiScheduleHeader from "../../images/svg/mui/mui-schedule-header.svg"
+import kayakReserveHeader from "../../images/svg/trekking/trekking-reserve-header.svg"
+import trekkingReserveHeader from "../../images/svg/kayak/kayak-reserve-header.svg"
+import yuiReserveHeader from "../../images/svg/yui/yui-reserve-buttom.svg"
+import muiReserveHeader from "../../images/svg/mui/mui-reserve-buttom.svg"
 
 const MenuSchedule = (props) => {
 
   let propsArry = props.schedulePics.length
   let color = props.color
-  let ContactButtom = props.contactButtom
-  let ScheduleHeader = props.menuInfoHeader
 
   return (
     <section id="schedule" className='bg-gray-50'>
       <div className="section-container mb-16">
         <div className="iso-target pt-16 max-w-[500px] mx-auto">
           <h2>
-            <ScheduleHeader
-              alt="マングローブカヤックのタイムスジェジュール"
-            />
+            {
+              color === "main-blue" && <img src={kayakScheduleHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "main-green" && <img src={trekkingScheduleHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "pink" && <img src={yuiScheduleHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "navy" && <img src={muiScheduleHeader} className="" alt="ツアー内容" />
+            }
           </h2>
         </div>
         {/* SP TIME SCHEDULE */}
@@ -157,7 +170,19 @@ const MenuSchedule = (props) => {
           className='max-w-[300px] w-[60%] h-auto'
           to={'/reserve'}
         >
-          <ContactButtom/>
+          {/* <ContactButtom/> */}
+          {
+              color === "main-blue" && <img src={kayakReserveHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "main-green" && <img src={trekkingReserveHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "pink" && <img src={yuiReserveHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "navy" && <img src={muiReserveHeader} className="" alt="ツアー内容" />
+          }
         </Link>
       </div>
     </section>

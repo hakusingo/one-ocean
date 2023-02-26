@@ -10,16 +10,13 @@ import Layout from '../components/layout'
 // import MenuScheduleHeader from "../components/svg/menu-schedule-header"
 import MenuHero from '../components/menu/menu-hero'
 import MenuIntro from '../components/menu/menu-intro'
-// import KayakInfoHeader from '../components/svg/kayak-info-header'
+
 import MenuContents from '../components/menu/menu-contents'
 import MenuEmotion from '../components/menu/menu-emotion'
 import MenuInformation from '../components/menu/menu-information'
 import MenuSchedule from '../components/menu/menu-schedule'
 
-import KayakContentsHeader from '../components/svg/yui-contents-header'
 import KayakInfoHeader from '../components/svg/yui-information-header'
-import KayakScheduleHeader from "../components/svg/yui-schedule-header"
-import KayakContactButton from '../components/svg/yui-contact-button'
 
 import "./menu.scss"
 import "./index.scss"
@@ -212,7 +209,6 @@ const Kayak = ({ data }) => {
         ContentsPic3 = {contentsPic3}
         color = "pink"
         menuContents = {menuContents}
-        menuContentsHeader = {KayakContentsHeader}
       />
       <MenuInformation
         MenuInfo = {MenuInfo}
@@ -223,8 +219,6 @@ const Kayak = ({ data }) => {
         schedulePics = {schedulePics}
         menuSchedule = {menuSchedule}
         color = "pink"
-        contactButtom = {KayakContactButton}
-        menuInfoHeader = {KayakScheduleHeader}
       />
       <MenuEmotion
         menuEmotionH3 = "「人と自然と繋がる」が冒険のテーマ"

@@ -16,10 +16,7 @@ import MenuEmotion from '../components/menu/menu-emotion'
 import MenuInformation from '../components/menu/menu-information'
 import MenuSchedule from '../components/menu/menu-schedule'
 
-import KayakContentsHeader from '../components/svg/mui-contents-header'
 import KayakInfoHeader from '../components/svg/mui-information-header'
-import KayakScheduleHeader from "../components/svg/mui-schedule-header"
-import KayakContactButton from '../components/svg/mui-contact-button'
 
 import "./menu.scss"
 import "./index.scss"
@@ -246,7 +243,6 @@ const Kayak = ({ data }) => {
         ContentsPic3 = {contentsPic3}
         color = "navy"
         menuContents = {menuContents}
-        menuContentsHeader = {KayakContentsHeader}
       />
       <MenuInformation
         MenuInfo = {MenuInfo}
@@ -258,8 +254,6 @@ const Kayak = ({ data }) => {
         schedulePics = {schedulePics}
         menuSchedule = {menuSchedule}
         color = "navy"
-        contactButtom = {KayakContactButton}
-        menuInfoHeader = {KayakScheduleHeader}
       />
       <MenuEmotion
         menuEmotionH3 = "古琉球の扉をひらく"

@@ -2,12 +2,14 @@ import React from 'react'
 
 import { GatsbyImage } from 'gatsby-plugin-image'
 
-// import KayakContentsHeader from '../svg/kayak-contents-header'
 import Wave from '../svg/wave'
+import kayakContentsHeader from "../../images/svg/trekking/trekking-contents-header.svg"
+import trekkingContentsHeader from "../../images/svg/kayak/kayak-contents-header.svg"
+import yuiContentsHeader from "../../images/svg/yui/yui-contents-header.svg"
+import muiContentsHeader from "../../images/svg/mui/mui-contents-header.svg"
 
 const MenuContents = (props) => {
 
-  let MenuContentsHeader = props.menuContentsHeader
   let ContentsPic1 = props.ContentsPic1
   let ContentsPic2 = props.ContentsPic2
   let ContentsPic3 = props.ContentsPic3
@@ -22,9 +24,19 @@ const MenuContents = (props) => {
       <div className="pr-8 pl-8">
         <div className="iso-target pt-16 max-w-[500px] mx-auto">
           <h2>
-            <MenuContentsHeader
-              alt="ツアー内容"
-            />
+            {
+              color === "main-blue" && <img src={kayakContentsHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "main-green" && <img src={trekkingContentsHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "pink" && <img src={yuiContentsHeader} className="" alt="ツアー内容" />
+            }
+            {
+              color === "navy" && <img src={muiContentsHeader} className="" alt="ツアー内容" />
+            }
+            {/* <img src={kayakContentsHeader} className="w-full h-[200px]" alt="ツアー内容" /> */}
           </h2>
         </div>
         <div className="max-w-[1300px] w-full mx-auto lg:grid lg:grid-cols-12 lg:gap-x-8 xl:gap-x-12">
