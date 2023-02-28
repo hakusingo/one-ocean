@@ -39,7 +39,7 @@ const contact = () => {
         </div>
       </section>
       <section id="reserve" className="bg-light-yellow pb-[8rem]">
-        <div className="section-container">
+        <div className="section-container leading-[1.6rem]">
           <div className="iso-target pt-16 max-w-[500px] mx-auto">
             <h2>
               {/* <ReserveHeader/> */}
@@ -50,82 +50,131 @@ const contact = () => {
             ご予約はお電話、SNSまたはコンタクトフォームより承ります。<br />
             <br/>
           </p>
-          <div className="md:w-[80%] mx-auto mb-4 px-4 py-6 lg:p-8 rounded-lg mt-4 lg:mt-8 bg-white">
-            <h3 className='text-main-blue lg:text-[18px] lg:pb-4 text-center font-bold pb-4'>
+          <div className="sm:w-[90%] max-w-[1000px] mx-auto mb-4 px-4 py-6 lg:p-8 rounded-lg mt-4 lg:mt-8 bg-white border-4 border-main-blue">
+            <h3 className='text-main-blue text-[22px] font-bold pb-1 underline decoration-main-blue underline-offset-8 text-center'>
               申込みに関する注意事項
             </h3>
-            <div className='w-[80%] mx-auto'>
+            <div className='mx-auto my-6 sm:w-[80%] max-w-[600px]'>
               <p className='my-2'>
                 ○キャンセルチャージについて
               </p>
-              <ul>
+              <ul className=''>
                 <li>
-                  ・前日12:00までのキャンセルの場合はキャンセルチャージは発生しません。
+                  　・前日12:00までのキャンセルの場合はキャンセルチャージは発生しません。
                 </li>
                 <li>
-                  ・コースご参加前日12:00以降はコース料金の50％、ご連絡無しのキャンセルの場合はコース料金全額お支払いいただきます。<br/>
+                  　・コースご参加前日12:00以降はコース料金の50％、ご連絡無しのキャンセルの場合はコース料金全額お支払いいただきます。<br/>
                 </li>
               </ul>
               <p className='my-2'>
                 ○お支払いは、現地支払いの現金精算のみとなります。
               </p>
             </div>
-            <h3 className='text-main-blue lg:text-[18px] lg:pb-4 text-center font-bold py-4'>
-            お電話・SNSからのご予約について
+            <h3 className='text-main-blue text-[22px] font-bold pb-1 underline decoration-main-blue underline-offset-8 text-center'>
+              お電話・SNSからのご予約
             </h3>
-            <div className='w-[80%] mx-auto'>
-            <p className='my-2'>
-              ○以下の事項をお電話、またはSNSダイレクトメールにてお伝え下さい。
+            <div className='mx-auto my-6 sm:w-[80%] max-w-[600px]'>
+              <p className='my-2'>
+                ○以下の事項をお電話、またはSNSダイレクトメールにてお伝え下さい。
               </p>
-              <ul className=''>
+              <ul className='border-2 mt-8 py-4 rounded-xl px-4 mx-auto sm:w-4/5'>
                 <li>
-                  ・ご希望のコース:
+                  ・ご希望のコース:<span  className='text-[14px] text-main-blue font-bold'>*必須</span><br/>
+                  <ul className='my-4 w-4/5 mx-auto md:max-w-[60%]'>
+                    <li>
+                      1) マングローブカヤック
+                    </li>
+                    <li>
+                      2) ター滝トレッキング
+                    </li>
+                    <li>
+                      3) 親子 結プログラム
+                    </li>
+                    <li>
+                      4) オリジナルムイツアー
+                    </li>
+                    <li>
+                      5) その他 複数可能です。
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  ・希望日: <span>*必須 潮や天候の都合により変更して頂く場合がございますので、なるべく第３希望日時までご記載ください。</span>
+                  ・希望日: <span className='text-[14px] text-main-blue font-bold'>*必須 (潮や天候の都合により変更して頂く場合がございますので、なるべく第３希望日時までご記載ください。)</span>
                 </li>
                 <li>
-                  ・代表者名: <span>*必須</span>
+                  ・代表者名: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
                 </li>
                 <li>
-                  ・ご希望のコース: <span>*必須</span>
+                  ・代表者電話番号: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
                 </li>
                 <li>
-                  ・代表者電話番号: <span>*必須</span>
+                  ・代表者メールアドレス: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
                 </li>
                 <li>
-                  ・代表者メールアドレス: <span>*必須</span>
+                  ・ご希望のコース: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
                 </li>
                 <li>
-                  ・参加人数　大人:　子供:
+                  ・参加人数　大人:　子供: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
                 </li>
                 <li>
-                  ・参加者情報 1)お名前 2)年齢 3)性別 4)体重 5)足のサイズ 
+                  ・参加者情報:
+                  <ul className='my-4 w-4/5 mx-auto md:max-w-[60%]'>
+                    <li>
+                      1)お名前
+                    </li>
+                    <li>
+                      2)年齢
+                    </li>
+                    <li>
+                      3)性別
+                    </li>
+                    <li>
+                      4)体重
+                    </li>
+                    <li>
+                      5)靴のサイズ <span  className='text-[14px] text-main-blue font-bold'>*トレッキングご参加の場合</span><br/>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  ・健康面での不安
+                  ・健康面での不安:
                 </li>
                 <li>
-                  ・宿泊先
+                  ・宿泊先:
                 </li>
                 <li>
-                  ・沖縄到着日
+                  ・沖縄到着日:
                 </li>
                 <li>
-                  ・沖縄出発日
+                  ・沖縄出発日:
                 </li>
                 <li>
                   ・ワンオーシャンをどのようにお知りになりましたか？
-                  1) YahooやGoogleなどの検索
-                  2) 広告
-                  3) ご紹介
-                  4) その他
+                  <ul className='my-4 w-4/5 mx-auto md:max-w-[60%]'>
+                    <li>
+                      1) YahooやGoogleなどの検索
+                    </li>
+                    <li>
+                      2) 広告
+                    </li>
+                    <li>
+                      3) ご紹介
+                    </li>
+                    <li>
+                      4) その他
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  ・ご予約に関するご質問・お問い合せ
+                  ・ご予約に関するご質問・お問い合せ:
                 </li>
               </ul>
-              <br/>
+              <p className='mt-8'>
+                　ご連絡頂いた翌日までに、ワンオーシャンからご連絡させていただきます。<br />
+                　しばらくお待ちくださいませ。お急ぎのかたはお電話よりご連絡お願いいたします。<br />
+                <br />
+                　お手数ですが、安全対策・スムーズな対応の為ご協力よろしくお願いいたします。
+              </p>
             </div>
           </div>
           <ReservePhoneSns/>

@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Example from '../components/example'
-import NotesHeader from '../components/svg/notes-header'
+import NotesHeader from "../images/svg/notes/notes-header.svg"
 import Seo from "../components/seo"
 
 const Notes = () => {
@@ -37,7 +37,7 @@ const Notes = () => {
         <div className="section-container">
           <div className="iso-target pt-16 max-w-[500px] mx-auto">
             <h2>
-              <NotesHeader />
+              <img className='pb-4' src={NotesHeader} alt="注意事項" />
             </h2>
           </div>
           <div className="max-w-[1200px] md:w-[80%] mx-auto">

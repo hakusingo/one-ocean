@@ -54,6 +54,7 @@ const MenuContents = (props) => {
                   <GatsbyImage
                     image={contentPics[i]}
                     className="aspect-[3/2] w-full h-auto object-cover rounded-t-[14px]"
+                    imgClassName='rounded-t-[14px]'
                     alt={content.alt}
                   />
                   <div className="relative">

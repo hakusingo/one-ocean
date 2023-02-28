@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
-import PrivacyPolicy from "../components/svg/privacy-policy"
+import policyHeader from "../images/svg/policy/policy-header.svg"
 import Example from '../components/example'
 import Seo from '../components/seo'
 
@@ -37,7 +37,7 @@ const policy = () => {
         <div className="section-container">
           <div className="iso-target pt-16 max-w-[500px] mx-auto">
             <h2>
-              <PrivacyPolicy />
+              <img className='pb-4' src={policyHeader} alt="PrivacyPolicy プライバシーポリシー" />
             </h2>
           </div>
           <div className="max-w-[1200px] md:w-[80%] mx-auto">
@@ -62,7 +62,7 @@ const policy = () => {
                 個人情報の定義
               "
               content="
-                個人情報とは、個人に関する情報であり、¥nこのサイトを通じてお客様から収集させていただく、氏名、生年月日、性別、住所、電話番号、メールアドレス等、お客様個人を識別できる情報およびお客様個人の固有情報を意味します。
+                個人情報とは、個人に関する情報であり、このサイトを通じてお客様から収集させていただく、氏名、生年月日、性別、住所、電話番号、メールアドレス等、お客様個人を識別できる情報およびお客様個人の固有情報を意味します。
               "
             />
             <Example 

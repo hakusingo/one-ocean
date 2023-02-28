@@ -78,6 +78,7 @@ const MenuSchedule = (props) => {
                       }
                       <GatsbyImage
                         className='my-4 rounded-[12px] aspect-[3/2]'
+                        imgClassName='rounded-[12px]'
                         image={props.schedulePics[i]}
                         alt={content.alt}
                       />

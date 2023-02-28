@@ -5,7 +5,8 @@ import { Link } from 'gatsby'
 import Seo from "../components/seo"
 import Wave from '../components/svg/wave'
 import Layout from '../components/layout'
-import ContactHeader from '../components/svg/conatct-header'
+import contactHeader from "../images/svg/contact/contact-header.svg"
+
 import ContactForm from '../components/contact-form'
 import ContactPhoneSns from '../components/contact-phon-sns'
 
@@ -40,8 +41,8 @@ const contact = () => {
       <section id="reserve" className="bg-light-yellow pb-[8rem]">
         <div className="section-container">
           <div className="iso-target pt-16 max-w-[500px] mx-auto">
-            <h2>
-              <ContactHeader/>
+            <h2 className='pb-4'>
+              <img src={contactHeader} alt="Contact お問合わせ" />
             </h2>
             <p className='w-[80%] mx-auto my-4'>
               ご質問、ご不明な点がございましたら、下記のお電話、SNSまたはコンタクトフォームよりお気軽にお問合わせ下さい。<br />

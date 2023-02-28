@@ -165,10 +165,11 @@ const Menu = () => {
                       {content.subTitle}
                     </p>
                   </div>
-                  <div className="">
+                  <div className="rounded-tl-[14px] shadow-xl">
                     {/* メニュー写真 */}
                     <GatsbyImage
-                      className="w-full h-auto aspect-[7/4] rounded-tl-[14px] shadow-xl"
+                      className="w-full h-auto aspect-[7/4] rounded-tl-[14px]"
+                      imgClassName='rounded-tl-[14px]'
                       alt={content.title}
                       // src="../../images/tour-menu/menu-kayak.jpg"
                       image={heroJpg[i]}

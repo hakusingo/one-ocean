@@ -50,7 +50,7 @@ const footerSpLink = [
   },
   {
     name: "プライバシーポリシー",
-    url: "policy",
+    url: "/policy",
   }
 ]
 
@@ -66,7 +66,7 @@ const Footer = () => (
         <Link
           to={`/`}
           className="inline-block mx-auto mt-6">
-          <img className="h-auto w-4/5 mx-auto" src={footerSpLogo} alt="OneOceanロゴ 沖縄自然体験アドベンチャー ワンオーシャン" />
+          <img className="h-auto w-4/5 mx-auto" src={footerSpLogo} alt="OneOceanロゴ 沖縄自然体験アドベンチャー ワンオーシャン" loading="lazy" />
         </Link>
       </h3>
       <div className="">
@@ -103,7 +103,7 @@ const Footer = () => (
             to={`/`}
           >
             {/* <FooterLogoPc/> */}
-            <img src={footerLogoPc} alt="OneOceanロゴ 沖縄自然体験アドベンチャー ワンオーシャン" />
+            <img src={footerLogoPc} alt="OneOceanロゴ 沖縄自然体験アドベンチャー ワンオーシャン" className="w-full h-auto" loading="lazy" />
           </Link>
           <div className="">
             <h3 className="pt-4 text-main-blue font-bold">

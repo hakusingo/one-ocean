@@ -114,6 +114,7 @@ const Feature = () => {
                     <GatsbyImage
                       image={featureImg}
                       className="aspect-[3/2] w-full h-auto object-cover rounded-t-[14px]"
+                      imgClassName='rounded-t-[14px]'
                       alt={`${featreTitle[i]} ワンオーシャンの特徴`}
                     />
                     <div className="relative">

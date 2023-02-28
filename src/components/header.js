@@ -9,7 +9,39 @@ import headerLogo from "../images/svg/header/header-logo.svg"
 // import HeaderLogo from "./svg/header-logo" 
 
 const Header = () => {
-  // SPのメーニューオープン時と、PCのメニューオープンの左側のデータ
+  const spMenu = [
+    {
+      name: "ホーム",
+      url: "/",
+    },
+    {
+      name: "マングローブカヤック",
+      url: "/kayak",
+    },
+    {
+      name: "ター滝トレッキング",
+      url: "/trekking"
+    },
+    {
+      name: "結プログラム",
+      url: "/yui"
+    },
+    {
+      name: "オリジナルムイツアー",
+      url: "/mui"
+    },
+    {
+      name: "ご予約",
+      url: "/reserve"
+    },
+    {
+      name: "お問い合せ",
+      url: "/contact"
+    },
+
+  ]
+
+  // PCのメニューオープン時のデータ
   const frontSpMenu = [
     {
       name: "ホーム",
@@ -32,20 +64,28 @@ const Header = () => {
       url: "/mui"
     },
     {
-      name: "ブログ",
-      url: "/blog"
-    },
-    {
       name: "ご予約",
       url: "/reserve"
     },
     {
       name: "お問い合せ",
       url: "/contact"
-    }
+    },
+    {
+      name: "ブログ",
+      url: "/blog"
+    },
+    {
+      name: "お知らせ",
+      url: "/news"
+    },
   ]
 
   const pcMenuRight = [
+    {
+      name: "ブログ",
+      url: "/blog"
+    },
     {
       name: "お知らせ",
       url: "/news"
@@ -58,10 +98,6 @@ const Header = () => {
       name: "プライバシーポリシー",
       url: "/policy"
     },
-    {
-      name: "サイトマップ",
-      url: "/"
-    }
   ]
 
   // SPメニューオープンロジック
@@ -290,7 +326,7 @@ const Header = () => {
           <div className="">
             <ul className="front-pc-menu-left text-[32px] font-bold text-main-blue">
               {
-                frontSpMenu.map((menu, i) => {
+                spMenu.map((menu, i) => {
                   return (
                     <li key={i} className="mb-4">
                       <Link
