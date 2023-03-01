@@ -3,7 +3,7 @@ body {
   color: #262626;
 }
 
-.form-style-reset {
+input:not([type="checkbox"]):not([type="radio"]), textarea, select {
   -webkit-appearance: none;
   appearance: none;
 }

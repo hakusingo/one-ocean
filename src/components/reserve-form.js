@@ -38,7 +38,7 @@ const ReserveForm = () => {
 
   // ラジオボタン
   const [tourMenu, setTourMenu] = useState("マングローブカヤック")
-  const TOUR_MENU_RADIO = ["マングローブカヤック", "ター滝アドベンチャー", "親子結プログラム", "オリジナルムイツアー", "その他"]
+  const TOUR_MENU_RADIO = ["マングローブカヤック", "ター滝アドベンチャー", "親子結プログラム", "オリジナルムイツアー", "その他 複数"]
 
   const [anxiety, setAnxiety] = useState("無し")
   const ANXIETY_RADIO = ["無し", "有り"]
@@ -205,7 +205,7 @@ const ReserveForm = () => {
                       name="date1" 
                       value={value['date1'] || ``}
                       onChange={handleChange}
-                      className='form-style-reset col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
+                      className=' col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
                     />
                     <input
                       required
@@ -214,7 +214,7 @@ const ReserveForm = () => {
                       value={value['time1'] || ``}
                       type="time"
                       onChange={handleChange}
-                      className='form-style-reset col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className=' col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     />
                   </div>
                 </div>
@@ -227,7 +227,7 @@ const ReserveForm = () => {
                       name="date2" 
                       value={value['date2'] || ``}
                       onChange={handleChange}
-                      className='form-style-reset col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
+                      className=' col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
                     />
                     <input
                       id="time2"
@@ -235,7 +235,7 @@ const ReserveForm = () => {
                       value={value['time2'] || ``}
                       onChange={handleChange}
                       type="time"
-                      className='form-style-reset col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className=' col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     />
                   </div>
                 </div>
@@ -248,7 +248,7 @@ const ReserveForm = () => {
                       name="date3" 
                       value={value['date3'] || ``}
                       onChange={handleChange}
-                      className='form-style-reset col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
+                      className=' col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
                     />
                     <input
                       id="time3"
@@ -256,7 +256,7 @@ const ReserveForm = () => {
                       value={value['time3'] || ``}
                       type="time"
                       onChange={handleChange}
-                      className='form-style-reset col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className=' col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     />
                   </div>
                 </div>
@@ -264,7 +264,7 @@ const ReserveForm = () => {
                 <div className="mb-2">
                   <label htmlFor="formName" className="inline-block mb-2">お名前<span className='text-pink'>*</span></label>
                   <input
-                    // required
+                    required
                     type="text"
                     name="formName" 
                     id="formName" 
@@ -276,7 +276,7 @@ const ReserveForm = () => {
                 <div className="mb-2">
                   <label htmlFor="formName" className="inline-block mb-2">フリガナ<span className='text-pink'>*</span></label>
                   <input
-                    // required
+                    required
                     type="text"
                     name="furigana" 
                     id="furigana" 
@@ -288,7 +288,7 @@ const ReserveForm = () => {
                 <div className="mb-2">
                   <label htmlFor="formEmail" className="inline-block mb-2">メールアドレス<span className='text-pink'>*</span></label>
                   <input
-                    // required
+                    required
                     type="email"
                     name="formEmail" 
                     id="formEmail"
@@ -301,7 +301,7 @@ const ReserveForm = () => {
                 <div className="mb-2">
                   <label htmlFor="formEmailConfirm" className="inline-block mb-2">確認用メールアドレス<span className='text-pink'>*</span></label>
                   <input
-                    // required
+                    required
                     type="email"
                     id="formEmailConfirm"
                     placeholder='example@mail.com' 
@@ -313,7 +313,7 @@ const ReserveForm = () => {
                 <div className="mb-2">
                   <label htmlFor="phone" className="inline-block mb-2">電話番号<span className='text-pink'>*</span></label>
                   <input
-                    // required
+                    required
                     type="tel"
                     name="phone" 
                     id="phone"
@@ -331,12 +331,12 @@ const ReserveForm = () => {
                   <div className="mb-2">
                     <label htmlFor='adalt' className="block mb-2 text-right">大人</label>
                     <select
-                      // required
+                      required
                       value={value['adalt'] || ``}
                       onChange={handleChange}
                       name="adalt" 
                       id="adalt" 
-                      className="form-style-reset border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                      className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -357,7 +357,7 @@ const ReserveForm = () => {
                       onChange={handleChange}
                       name="child" 
                       id="child" 
-                      className="form-style-reset border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                      className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     >
                       <option value="0">0</option>
                       <option value="1">1</option>
@@ -452,7 +452,7 @@ const ReserveForm = () => {
                   <label htmlFor="">
                     沖縄ご到着日
                     <input 
-                      className='form-style-reset mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className=' mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                       id="arrival" 
                       name="arrival"
                       type="date"
@@ -465,7 +465,7 @@ const ReserveForm = () => {
                   <label htmlFor="">
                     沖縄からお帰りになる日
                     <input 
-                      className='form-style-reset mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className=' mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                       id="Departure"
                       name="Departure"
                       type="date"
