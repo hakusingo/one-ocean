@@ -55,7 +55,7 @@ const footerSpLink = [
 ]
 
 const Footer = () => (
-  <footer className="bg-main-blue md:bg-white relative z-10">
+  <footer className="bg-main-blue md:bg-white relative z-10 pb-[70px] sm:pb-0">
     <div id="footer-sp" className="text-white md:hidden">
       <h3 className="text-[1.4rem] font-serif font-semibold text-center pt-[2rem]">
         沖縄貸切自然体験<br/>

@@ -6,7 +6,8 @@ import { RxCrossCircled } from "react-icons/rx"
 import "./header.scss"
 import headerLogo from "../images/svg/header/header-logo.svg"
 
-// import HeaderLogo from "./svg/header-logo" 
+import { BsFillTelephoneOutboundFill } from "react-icons/bs"
+import { GoCalendar } from "react-icons/go"
 
 const Header = () => {
   const spMenu = [
@@ -253,6 +254,36 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+        </div>
+      </div>
+
+      {/* SP版予約・電話ボタン Sticky */}
+      <div id="sp-bottom-contact" className={`absolute bg-light-blue bg-opacity-[0.8] text-white top-[calc(100vh-60px)] transition delay-100 left-0 h-[60px] w-full grid grid-cols-2 sm:hidden ${isWider ? "" : "opacity-0 invisible"}`}>
+        <div className="w-full h-full flex justify-center items-center">
+          <a
+            href="tel:090-4471-7311"
+            className="flex border border-white items-center justify-center gap-4 w-[96%] h-[80%] text-[18px] rounded-lg bg-main-blue"
+          >
+            <BsFillTelephoneOutboundFill
+              className="align-middle"
+            />
+            <div>
+              お電話
+            </div>
+          </a>
+        </div>
+        <div className="w-full h-full flex justify-center items-center">
+          <Link
+            className="flex border border-white items-center justify-center gap-4 w-[96%] h-[80%] text-[18px] rounded-lg bg-main-blue"
+            to="/reserve"
+          >
+            <GoCalendar
+              className="align-middle"
+            />
+            <div className="align-middle">
+              ご予約
+            </div>
+          </Link>
         </div>
       </div>
     </header>
