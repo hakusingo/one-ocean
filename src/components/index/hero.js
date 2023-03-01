@@ -78,7 +78,7 @@ const Hero = () => {
   },[])
   
   return (
-    <section id="front-hero" className="h-[calc(100vh-60px)] md:h-[calc(100vh-80px)] w-full mx-auto relative -z-10">
+    <section id="front-hero" className="h-[calc(100svh-60px)] md:h-[calc(100svh-80px)] w-full mx-auto relative -z-10">
       {/* <div id="front-hero-cover" className="absolute z-20"></div> */}
       <StaticImage
         imgClassName="hero-image absolute top-0 left-0 bottom-0 right-0 -z-10"
