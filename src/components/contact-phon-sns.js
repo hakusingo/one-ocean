@@ -14,7 +14,7 @@ const ContactPhoneSns = () => {
         <a
           href="tel:090-4471-7311"
           className='bg-light-blue border-4 border-main-blue text-center inline-block font-semibold text-main-blue mt-4 px-4 py-1 rounded-md'>
-          <span className='text-[28px] font-bold inline-block'>
+          <span className='text-[28px] font-bold'>
             090-4471-7311<br/>
           </span>
           <span className='text-main-blue text-[10px] lg:hidden'>※クリックで通話します</span>

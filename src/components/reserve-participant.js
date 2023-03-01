@@ -69,7 +69,7 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                     性別
                   </label>
                   <select
-                    className='w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                    className='appearance-none w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     value={value.partList[i]["sex"] || ``}
                     onChange={partListChange}
                     name="sex"
@@ -108,7 +108,7 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                     /> */}
                   </label>
                   <select
-                    className='w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                    className='appearance-none w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     value={value.partList[i]["footSize"] || ``}
                     onChange={partListChange}
                     name="footSize"
@@ -216,7 +216,7 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
         })
       }
       <div>
-        <button onClick={addParticipant} className='bg-gray-100 py-2 px-4 mx-auto block my-4 border-2 rounded-lg'>入力欄を追加する</button>
+        <button onClick={addParticipant} className='py-2 px-4 mx-auto block my-4 border-2 rounded-lg'>入力欄を追加する</button>
       </div>
       {/* <div className="py-2">
         <label className='block mb-2'>なまえ</label>

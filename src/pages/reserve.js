@@ -111,9 +111,6 @@ const contact = () => {
                   ・代表者メールアドレス: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
                 </li>
                 <li>
-                  ・ご希望のコース: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
-                </li>
-                <li>
                   ・参加人数　大人:　子供: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
                 </li>
                 <li>

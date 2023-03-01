@@ -196,29 +196,30 @@ const ReserveForm = () => {
                   }
                 </div>
                 <div className="mb-2">
-                  <p htmlFor='date1' className='mb-2 col-span-1'>希望日1<span className='text-pink'>*</span></p>
+                  <label htmlFor='date1' className='mb-2 col-span-1'>希望日時1<span className='text-pink'>*</span></label>
                   <div className="grid grid-cols-2 gap-2">
                     <input
-                      // required
+                      required
                       id="date1"
                       type="date"
                       name="date1" 
                       value={value['date1'] || ``}
                       onChange={handleChange}
-                      className='col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
+                      className='appearance-none col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
                     />
                     <input
+                      required
                       id="time1"
                       name="time1"
                       value={value['time1'] || ``}
                       type="time"
                       onChange={handleChange}
-                      className='col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className='appearance-none col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     />
                   </div>
                 </div>
                 <div className="mb-2">
-                  <p htmlFor='date2' className='mb-2 col-span-1'>希望日2</p>
+                  <p htmlFor='date2' className='mb-2 col-span-1'>希望日時2</p>
                   <div className="grid grid-cols-2 gap-2">
                     <input
                       id="date2"
@@ -226,7 +227,7 @@ const ReserveForm = () => {
                       name="date2" 
                       value={value['date2'] || ``}
                       onChange={handleChange}
-                      className='col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
+                      className='appearance-none col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
                     />
                     <input
                       id="time2"
@@ -234,12 +235,12 @@ const ReserveForm = () => {
                       value={value['time2'] || ``}
                       onChange={handleChange}
                       type="time"
-                      className='col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className='appearance-none col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     />
                   </div>
                 </div>
                 <div className="mb-2">
-                  <p htmlFor='date3' className='mb-2 col-span-1'>希望日3</p>
+                  <p htmlFor='date3' className='mb-2 col-span-1'>希望日時3</p>
                   <div className="grid grid-cols-2 gap-2">
                     <input
                       id="date3"
@@ -247,7 +248,7 @@ const ReserveForm = () => {
                       name="date3" 
                       value={value['date3'] || ``}
                       onChange={handleChange}
-                      className='col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
+                      className='appearance-none col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'  
                     />
                     <input
                       id="time3"
@@ -255,7 +256,7 @@ const ReserveForm = () => {
                       value={value['time3'] || ``}
                       type="time"
                       onChange={handleChange}
-                      className='col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className='appearance-none col-span-1 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     />
                   </div>
                 </div>
@@ -335,7 +336,7 @@ const ReserveForm = () => {
                       onChange={handleChange}
                       name="adalt" 
                       id="adalt" 
-                      className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                      className="appearance-none border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -356,7 +357,7 @@ const ReserveForm = () => {
                       onChange={handleChange}
                       name="child" 
                       id="child" 
-                      className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                      className="appearance-none border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     >
                       <option value="0">0</option>
                       <option value="1">1</option>
@@ -451,7 +452,7 @@ const ReserveForm = () => {
                   <label htmlFor="">
                     沖縄ご到着日
                     <input 
-                      className='mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className='appearance-none mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                       id="arrival" 
                       name="arrival"
                       type="date"
@@ -464,7 +465,7 @@ const ReserveForm = () => {
                   <label htmlFor="">
                     沖縄からお帰りになる日
                     <input 
-                      className='mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                      className='appearance-none mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                       id="Departure"
                       name="Departure"
                       type="date"
