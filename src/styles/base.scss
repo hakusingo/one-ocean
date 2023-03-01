@@ -6,6 +6,7 @@ body {
 input:not([type="checkbox"]):not([type="radio"]), textarea, select {
   -webkit-appearance: none;
   appearance: none;
+  background-color: #fff !important;
 }
 
 .bg-pink {
