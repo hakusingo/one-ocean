@@ -57,6 +57,9 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                     <input
                       className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
                       type="number"
+                      step="1"
+                      max="100"
+                      data-format="$1 歳"
                       name="age"
                       id="age"
                       value={value.partList[i]["age"] || ``}
@@ -69,7 +72,7 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                     性別
                   </label>
                   <select
-                    className='appearance-none w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                    className='form-style-reset w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     value={value.partList[i]["sex"] || ``}
                     onChange={partListChange}
                     name="sex"
@@ -88,6 +91,7 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                     <input
                       className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
                       type="number"
+                      step="2"
                       name={"weight"}
                       id={"weight"}
                       value={value.partList[i]["weight"] || ``}
@@ -108,7 +112,7 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                     /> */}
                   </label>
                   <select
-                    className='appearance-none w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
+                    className='form-style-reset w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2'
                     value={value.partList[i]["footSize"] || ``}
                     onChange={partListChange}
                     name="footSize"
