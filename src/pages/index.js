@@ -7,11 +7,11 @@ import Layout from "../components/layout"
 import "./index.scss"
 import Hero from "../components/index/hero"
 import Intro from "../components/index/intro"
-// import News from "../components/index/news"
+import News from "../components/index/news"
 import Menu from "../components/index/menu"
 import Feature from "../components/index/feature"
 import Stuff from "../components/index/stuff"
-// import Blog from "../components/index/blog"
+import Blog from "../components/index/blog"
 import Emotion from "../components/index/emotion"
 import Modal from "../components/index/modal"
 
@@ -23,11 +23,11 @@ const IndexPage = () => {
     <Layout>
       <Hero />
       <Intro />
-      {/* <News /> */}
+      <News />
       <Menu />
       <Feature />
       <Stuff modal={modal} modalState={modalState} />
-      {/* <Blog /> */}
+      <Blog />
       <Emotion />
       {
         modal || (
