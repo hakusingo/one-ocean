@@ -243,7 +243,7 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP])
       }
     }
-    kayakIntro2: file(relativePath: {eq: "menu/trekking/trekking-intro-pic3.jpg"}) {
+    kayakIntro2: file(relativePath: {eq: "menu/trekking/trekking-intro-pic2.jpg"}) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP])
       }
