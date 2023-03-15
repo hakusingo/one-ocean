@@ -121,7 +121,7 @@ const Hero = () => {
             alt="ター滝ツアーの写真"
             objectPosition="50% 80%"
             loading="eager"
-            layout='fullWidth'
+            width={1000}
             formats={["auto", "webp"]}
           />
         </SwiperSlide>
@@ -131,6 +131,7 @@ const Hero = () => {
             alt="マングローブカヤック"
             src="../../images/menu/trekking/trekking-hero-pic2.jpg"
             objectPosition="50% 90%"
+            width={1000}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -139,6 +140,7 @@ const Hero = () => {
             alt="マングローブカヤック"
             src="../../images/hero/hero-pic4.jpg"
             objectPosition="30% 50%"
+            width={1000}
           />
         </SwiperSlide>
       </Swiper>
