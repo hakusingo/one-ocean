@@ -112,7 +112,7 @@ const Footer = () => (
             </h3>
             <div className="pt-2">
               〒904-2312 沖縄県うるま市勝連平安名1199<br/>
-              E-mail:info@one-ocean-toku.com<br/>
+              {/* E-mail:info@one-ocean-toku.com<br/> */}
               Tel:090-4471-7311
             </div>
           </div>

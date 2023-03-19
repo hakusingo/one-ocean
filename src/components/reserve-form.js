@@ -157,16 +157,41 @@ const ReserveForm = () => {
             なお、ツアー催行中などで電話に出られない場合は、こちらから折り返しご連絡させていただきます。
             <span className="max-w-screen-md text-gray-500 mx-auto block">*は記入必須です。</span>
           </p>
+          <p className="text-gray-400 text-xs mt-4 text-center pb-2">当サイトのプライバシーポリシー 
+            <Link to="/policy" className="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100">Privacy Policy</Link>.
+          </p>
         </div>
         {/* text - end */}
 
         {/* form - start */}
-        <div className="bg-white border-4 border-main-blue rounded-lg mt-12 items-start max-w-[1000px] mx-auto">
+        <div className="bg-white border-4 border-main-blue rounded-lg mt-12 items-start max-w-[800px] mx-auto">
 
           { serverResponse ? <ReserveComplete/> : (
-            <form onSubmit={onSubmit}  method="POST" action="/api/send" name="contact" className="max-w-screen-md mx-auto px-4">
+            <form onSubmit={onSubmit}  method="POST" action="/api/send" name="contact" className="max-w-screen-md mx-auto px-4 xl:px-8">
               <div className='mt-8'>
-                <h3 className='inline-block mb-4 font-semibold text-main-blue text-[1.2rem] md:text-[1.6rem]'>1. ご希望のコース</h3>
+                <div className=''>
+                  <p className='text-[14px] text-gray-600 max-w-[500px] mx-auto text-center'>
+                    はじめに、下記のリンク先の注意事項ページの項目を読んで頂き、<br className='hidden lg:block'/>同意する場合はチェックを入れ先に進んで下さい。
+                  </p>
+                  <div className='mt-2 flex justify-center'>
+                    <Link
+                      to="/notes"
+                      className='border-b-2 border-main-blue text-main-blue'
+                    >
+                      注意事項ページへ
+                    </Link>
+                  </div>
+                  <div className="mt-2 flex justify-center">
+                    <label htmlFor="">
+                      <input 
+                        type="checkbox"
+                        required
+                      />
+                      　申込みに関する注意事項に同意する
+                    </label>
+                  </div>
+                </div>
+                <h3 className='inline-block mb-4 font-semibold text-main-blue text-[1.2rem] md:text-[1.6rem] mt-12'>1. ご希望のコース</h3>
                 <div className="mb-2">
                   <p className="inline-block mb-2">ご希望コース<span className='text-pink'>*</span></p>
                   {
@@ -542,21 +567,6 @@ const ReserveForm = () => {
                     ○メール受信制限設定をされている方は「@one-ocean-toku.com」の受信許可をお願いいたします。
                     予約フォーム送信完了後、送信確認のための自動返信メールを送信しています。
                   </div>
-                  <div className='flex justify-center my-4'>
-                    <Link
-                      to="/notes"
-                      className='block border-b-2 border-main-blue text-main-blue'
-                    >
-                      注意事項ページへ
-                    </Link>
-                  </div>
-                  <label htmlFor="">
-                    <input 
-                      type="checkbox"
-                      required
-                    />
-                    申込みに関する注意事項に同意する
-                  </label>
                 </div>
               </div>
               {/* お読み下さい */}
@@ -570,13 +580,13 @@ const ReserveForm = () => {
                     type="checkbox"
                   />
                   <label htmlFor='course'>
-                    お問い合わせの内容はこちらでよろしいですか？
+                    お問い合わせの内容はこちらでよろしいですか？<br/>
                     よろしければチェックを入れて送信ボタンをクリックしてください。
                   </label>
                 </div>
               </div>
               <hr className='my-4'/>
-              <div className="flex justify-center">
+              <div className="flex justify-center mb-8">
                 <button
                   aria-label="submit"
                   type="submit"
@@ -585,9 +595,9 @@ const ReserveForm = () => {
                   送信する
                 </button>
               </div>
-              <p className="text-gray-400 text-xs mt-12 text-center pb-2">当サイトのプライバシーポリシー 
+              {/* <p className="text-gray-400 text-xs mt-12 text-center pb-2">当サイトのプライバシーポリシー 
                 <Link to="/policy" className="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100">Privacy Policy</Link>.
-              </p>
+              </p> */}
             </form>
           ) }
           

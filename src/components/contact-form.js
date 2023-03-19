@@ -49,14 +49,17 @@ const ContactForm = () => {
             なお、ツアー催行中などで電話に出られない場合は、こちらから折り返しご連絡させていただきます。
             <span className="max-w-screen-md text-gray-500 mx-auto block">*は記入必須です。</span>
           </p>
+          <p className="text-gray-400 text-xs mt-4 text-center pb-2">当サイトのプライバシーポリシー 
+            <Link to="/policy" className="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100">Privacy Policy</Link>.
+          </p>
         </div>
         {/* text - end */}
 
         {/* form - start */}
-        <div className="bg-white border-4 border-main-blue rounded-lg mt-12 items-start max-w-[1000px] mx-auto">
+        <div className="bg-white border-4 border-main-blue rounded-lg mt-12 items-start max-w-[800px] mx-auto">
 
           { serverResponse ? <ContactComplete/> : (
-            <form onSubmit={onSubmit}  method="POST" action="/api/send" name="contact" className="max-w-screen-md mx-auto px-4">
+            <form onSubmit={onSubmit}  method="POST" action="/api/send" name="contact" className="max-w-screen-md mx-auto px-4 lg:px-8">
               <div className='mt-8'>
                 <h3 className='inline-block mb-4 font-semibold text-main-blue text-[1.2rem] md:text-[1.6rem]'>ご質問者様の情報記入</h3>
                 <div className="mb-2">
@@ -169,7 +172,7 @@ const ContactForm = () => {
                 </div>
               </div>
               <hr className='my-4'/>
-              <div className="flex justify-center">
+              <div className="flex justify-center mb-12">
                 <button
                   type="submit"
                   className='inline-block border font-semibold bg-main-blue text-white py-1 px-4 rounded'
@@ -177,9 +180,6 @@ const ContactForm = () => {
                   送信する
                 </button>
               </div>
-              <p className="text-gray-400 text-xs mt-12 text-center pb-2">当サイトのプライバシーポリシー 
-                <Link to="/policy" className="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100">Privacy Policy</Link>.
-              </p>
             </form>
           ) }
           

@@ -402,7 +402,7 @@ const Header = () => {
               </div>
               <p className="text-[12px] whitespace-nowrap">
                 https//one-ocean-toku.com<br/>
-                info@one-ocean-toku.com
+                {/* info@one-ocean-toku.com */}
               </p>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const ReserveParticipant = ({participants, deleteParticipant, createParticipant, value, handleChange, partListChange, setValue}) => {
   // let partNum = 1
@@ -25,12 +25,33 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
     deleteParticipant(id)
   }
 
+  function ageSelecter() {
+    var selectBox = document.getElementById('age');
+    for (var i = 0; i <= 100; i++) {
+      var option = '<option value="' + i + '">' + i + '歳</option>';
+      selectBox.insertAdjacentHTML('beforeend', option);
+    }
+  }
+
+  function weightSelecter() {
+    var selectBox = document.getElementById('weight');
+    for (var i = 5; i <= 120; i++) {
+      var option = '<option value="' + i + '">' + i + 'Kg</option>';
+      selectBox.insertAdjacentHTML('beforeend', option);
+    }
+  }
+
+  useEffect(() => {
+    ageSelecter()
+    weightSelecter()
+  }, [])
+
   return (
     <ol id="decimalList" className='list-decimal'>
       {
         participants.map((part, i) => {
           return(
-            <li className='ml-4 mr-4 bg-sky-100 px-2 py-2 my-2 rounded-lg' key={i}>
+            <li className='ml-4 mr-4 bg-sky-100 px-4 xl:px-8 py-2 my-2 rounded-lg' key={i}>
               <div className="py-2">
                 <label className='block mb-2'>
                   名前
@@ -52,9 +73,17 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className='py-2 col-span-1'>
-                  <label className='block mb-2'>
+                  <label htmlFor='age' className='block mb-2'>
                     年齢
-                    <input
+                    <select
+                      aria-label="age"
+                      name="age"
+                      id="age"
+                      value={value.partList[i]["age"] || ``}
+                      onChange={partListChange}
+                      className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
+                    ></select>
+                    {/* <input
                       className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
                       type="number"
                       max="100"
@@ -62,7 +91,7 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                       id="age"
                       value={value.partList[i]["age"] || ``}
                       onChange={partListChange}
-                    />
+                    /> */}
                   </label>
                 </div>
                 <div className='py-2 col-span-1'>
@@ -79,22 +108,32 @@ const ReserveParticipant = ({participants, deleteParticipant, createParticipant,
                     <option value="">選択</option>
                     <option value="男性">男性</option>
                     <option value="女性">女性</option>
+                    <option value="無回答">無回答</option>
                   </select>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className='py-2 col-span-1'>
-                  <label className='block mb-2'>
+                  <label htmlFor='weight' className='block mb-2'>
                     体重
-                    <input
-                      className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
-                      type="number"
-                      name={"weight"}
-                      id={"weight"}
-                      value={value.partList[i]["weight"] || ``}
-                      onChange={partListChange}
-                    />
                   </label>
+                  <select
+                    aria-label="weight"
+                    name="weight"
+                    id="weight"
+                    value={value.partList[i]["weight"] || ``}
+                    onChange={partListChange}
+                    className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
+                  ></select>
+                  {/* <input
+                    className="mt-2 w-full text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
+                    type="number"
+                    name={"weight"}
+                    id={"weight"}
+                    value={value.partList[i]["weight"] || ``}
+                    onChange={partListChange}
+                  /> */}
+
                 </div>
                 <div className='py-2 col-span-1'>
                   <label htmlFor="footSize" className='block mb-2'>

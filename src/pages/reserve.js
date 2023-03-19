@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 import ReserveForm from '../components/reserve-form'
 // import ReserveHeader from '../components/svg/reserve-header'
 import reserveHeader from "../images/svg/reserve/reserve-header.svg"
-import ReservePhoneSns from '../components/reserve-phone-sns'
+import ReservePhoneSns from '../components/contact-phon-sns'
 
 import "./reserve.scss"
 
@@ -31,7 +31,7 @@ const contact = () => {
         <div className="max-w-[900px] rounded-[12px] w-[80%] absolute bg-main-blue text-white bottom-0 left-[50%] -translate-x-[50%]">
           <h2 className='relative py-2 text-center text-[1.4rem] md:text-[2rem] font-semibold'>
             <span className='py-1 text-[12px] block font-light md:text-8 md:text-[1rem]'>
-              ご予約はお電話、SNS、<br className='lg:hidden' />メールフォームより承ります
+              ご予約はお電話、SNS、<br className='xl:hidden' />メールフォームより承ります
             </span>
             ご予約
             <div className="absolute rounded-[12px] w-[94%] md:w-[98%] h-[88%] border-white border top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2"></div>
@@ -54,9 +54,9 @@ const contact = () => {
             <h3 className='text-main-blue text-[22px] font-bold pb-1 underline decoration-main-blue underline-offset-8 text-center'>
               申込みに関する注意事項
             </h3>
-            <div className='mx-auto my-6 sm:w-[80%] max-w-[600px]'>
-              <p className='my-2'>
-                ○キャンセルチャージについて
+            <div className='mx-auto my-12 sm:w-[80%] max-w-[600px]'>
+              <p className=''>
+                ○ キャンセルチャージについて
               </p>
               <ul className=''>
                 <li>
@@ -66,20 +66,20 @@ const contact = () => {
                   　・コースご参加前日12:00以降はコース料金の50％、ご連絡無しのキャンセルの場合はコース料金全額お支払いいただきます。<br/>
                 </li>
               </ul>
-              <p className='my-2'>
-                ○お支払いは、現地支払いの現金精算のみとなります。
+              <p className='mt-8'>
+                ○ お支払いは、現地支払いの現金精算のみとなります。
               </p>
             </div>
             <h3 className='text-main-blue text-[22px] font-bold pb-1 underline decoration-main-blue underline-offset-8 text-center'>
               お電話・SNSからのご予約
             </h3>
-            <div className='mx-auto my-6 sm:w-[80%] max-w-[600px]'>
+            <div className='mx-auto my-12 sm:w-[80%] max-w-[600px]'>
               <p className='my-2'>
-                ○以下の事項をお電話、またはSNSダイレクトメールにてお伝え下さい。
+                ○ 以下の事項をお電話、またはSNSダイレクトメールにてお伝え下さい。
               </p>
-              <ul className='border-2 mt-8 py-4 rounded-xl px-4 mx-auto sm:w-4/5'>
+              <ul className='border-2 mt-8 py-4 rounded-xl px-4 mx-auto'>
                 <li>
-                  ・ご希望のコース:<span  className='text-[14px] text-main-blue font-bold'>*必須</span><br/>
+                  ・ご希望のコース:<span  className='text-[14px] text-main-blue'>*必須</span><br/>
                   <ul className='my-4 w-4/5 mx-auto md:max-w-[60%]'>
                     <li>
                       1) マングローブカヤック
@@ -99,19 +99,19 @@ const contact = () => {
                   </ul>
                 </li>
                 <li>
-                  ・希望日: <span className='text-[14px] text-main-blue font-bold'>*必須 (潮や天候の都合により変更して頂く場合がございますので、なるべく第３希望日時までご記載ください。)</span>
+                  ・希望日: <span className='text-[14px] text-main-blue'>*必須 (潮や天候の都合により変更して頂く場合がございますので、なるべく第３希望日時までご記載ください。)</span>
                 </li>
                 <li>
-                  ・代表者名: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
+                  ・代表者名: <span  className='text-[14px] text-main-blue'>*必須</span>
                 </li>
                 <li>
-                  ・代表者電話番号: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
+                  ・代表者電話番号: <span  className='text-[14px] text-main-blue'>*必須</span>
                 </li>
                 <li>
-                  ・代表者メールアドレス: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
+                  ・代表者メールアドレス: <span  className='text-[14px] text-main-blue'>*必須</span>
                 </li>
                 <li>
-                  ・参加人数　大人:　子供: <span  className='text-[14px] text-main-blue font-bold'>*必須</span>
+                  ・参加人数　大人:　子供: <span  className='text-[14px] text-main-blue'>*必須</span>
                 </li>
                 <li>
                   ・参加者情報:
@@ -129,7 +129,7 @@ const contact = () => {
                       4)体重
                     </li>
                     <li>
-                      5)靴のサイズ <span  className='text-[14px] text-main-blue font-bold'>*トレッキングご参加の場合</span><br/>
+                      5)靴のサイズ <span  className='text-[14px] text-main-blue'>*トレッキングご参加の場合</span><br/>
                     </li>
                   </ul>
                 </li>
@@ -167,10 +167,9 @@ const contact = () => {
                 </li>
               </ul>
               <p className='mt-8'>
-                　ご連絡頂いた翌日までに、ワンオーシャンからご連絡させていただきます。<br />
-                　しばらくお待ちくださいませ。お急ぎのかたはお電話よりご連絡お願いいたします。<br />
+                　ご連絡頂いた翌日までに、ワンオーシャン:徳門からご連絡させていただきます。お急ぎのかたはお電話よりご連絡お願いいたします。<br />
                 <br />
-                　お手数ですが、安全対策・スムーズな対応の為ご協力よろしくお願いいたします。
+                　大変お手数ですが、安全対策・スムーズな対応の為ご協力よろしくお願いいたします。
               </p>
             </div>
           </div>
