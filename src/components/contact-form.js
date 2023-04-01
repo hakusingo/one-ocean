@@ -82,6 +82,7 @@ const ContactForm = () => {
                     type="email"
                     name="formEmail" 
                     id="formEmail"
+                    size="40"
                     placeholder='example@mail.com' 
                     value={value['formEmail'] || ``}
                     onChange={handleChange}
@@ -94,6 +95,7 @@ const ContactForm = () => {
                     required
                     type="email"
                     id="formEmailConfirm"
+                    size="40"
                     placeholder='example@mail.com' 
                     value={value['formEmailConfirm'] || ``}
                     onChange={handleChange}
@@ -142,10 +144,11 @@ const ContactForm = () => {
                 </div>
                 <div className="">
                   <label htmlFor='message' className=''>
-                    ご予約に関するご質問・お問い合わせをご記入ください<span className='text-pink'>*</span>
+                    ご予約に関するご質問・お問い合わせをご記入ください(1000文字以内)<span className='text-pink'>*</span>
                     <textarea
                       required
                       id="message"
+                      maxlength="1000"
                       value={value['message'] || ``}
                       onChange={handleChange}
                       name="message" 

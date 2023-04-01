@@ -102,7 +102,7 @@ const MenuInfo = [
     title: `備考`,
     desc: `汚れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
     linkName: `注意事項`,
-    url: `/coution`
+    url: `/notes`
   },
 ]
 
@@ -287,7 +287,7 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
-    kayakSchedulePic4: file(relativePath: {eq: "menu/trekking/trekking-schedule-lecture.jpg"}) {
+    kayakSchedulePic4: file(relativePath: {eq: "menu/yui/yui-schedule-enjoy.jpg"}) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
@@ -297,7 +297,7 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }
     }
-    kayakSchedulePic6: file(relativePath: {eq: "menu/yui/yui-schedule-enjoy.jpg"}) {
+    kayakSchedulePic6: file(relativePath: {eq: "menu/yui/yui-schedule-enjoy2.jpg"}) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 500, formats: [AUTO, WEBP])
       }

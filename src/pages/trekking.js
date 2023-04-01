@@ -94,7 +94,7 @@ const MenuInfo = [
     title: `備考`,
     desc: `濡れても良いお洋服でお越し下さい。\n天候によりますが、ガイドの 判断でツアーを中止する場合 がございます。 ご了承くださいませ。\n\n※下記の注意事項をツアー参加 前に必ずお読みくださいませ。`,
     linkName: `注意事項`,
-    url: `/coution`
+    url: `/notes`
   },
 ]
 
@@ -243,7 +243,7 @@ export const query = graphql`
         gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP])
       }
     }
-    kayakIntro2: file(relativePath: {eq: "menu/trekking/trekking-intro-pic2.jpg"}) {
+    kayakIntro2: file(relativePath: {eq: "menu/trekking/trekking-intro-pic4.jpg"}) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 300, formats: [AUTO, WEBP])
       }

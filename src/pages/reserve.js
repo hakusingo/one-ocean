@@ -77,29 +77,29 @@ const contact = () => {
               <p className='my-2'>
                 ○ 以下の事項をお電話、またはSNSダイレクトメールにてお伝え下さい。
               </p>
-              <ul className='border-2 mt-8 py-4 rounded-xl px-4 mx-auto'>
+              <ul className='border-2 mt-8 py-4 rounded-xl px-4 md:px-8 mx-auto'>
                 <li>
                   ・ご希望のコース:<span  className='text-[14px] text-main-blue'>*必須</span><br/>
-                  <ul className='my-4 w-4/5 mx-auto md:max-w-[60%]'>
+                  <ul className='my-4 w-4/5 mx-auto md:max-w-[90%]'>
                     <li>
-                      1) マングローブカヤック
+                      1. マングローブカヤック
                     </li>
                     <li>
-                      2) ター滝トレッキング
+                      2. ター滝トレッキング
                     </li>
                     <li>
-                      3) 親子 結プログラム
+                      3. 親子 結プログラム
                     </li>
                     <li>
-                      4) オリジナルムイツアー
+                      4. オリジナルムイツアー
                     </li>
                     <li>
-                      5) その他 複数可能です。
+                      5. その他 複数可能です。
                     </li>
                   </ul>
                 </li>
                 <li>
-                  ・希望日: <span className='text-[14px] text-main-blue'>*必須 (潮や天候の都合により変更して頂く場合がございますので、なるべく第３希望日時までご記載ください。)</span>
+                  ・希望日: <span className='text-[14px] text-main-blue'><br/>*必須 (潮や天候の都合により変更して頂く場合がございますので、なるべく第３希望日時までご記載ください。)</span>
                 </li>
                 <li>
                   ・代表者名: <span  className='text-[14px] text-main-blue'>*必須</span>
@@ -115,21 +115,21 @@ const contact = () => {
                 </li>
                 <li>
                   ・参加者情報:
-                  <ul className='my-4 w-4/5 mx-auto md:max-w-[60%]'>
+                  <ul className='my-4 w-4/5 mx-auto md:max-w-[90%]'>
                     <li>
-                      1)お名前
+                      1. お名前
                     </li>
                     <li>
-                      2)年齢
+                      2. 年齢
                     </li>
                     <li>
-                      3)性別
+                      3. 性別
                     </li>
                     <li>
-                      4)体重
+                      4. 体重
                     </li>
                     <li>
-                      5)靴のサイズ <span  className='text-[14px] text-main-blue'>*トレッキングご参加の場合</span><br/>
+                      5. 靴のサイズ <span  className='text-[14px] text-main-blue'>*トレッキングご参加の場合</span><br/>
                     </li>
                   </ul>
                 </li>
@@ -147,18 +147,18 @@ const contact = () => {
                 </li>
                 <li>
                   ・ワンオーシャンをどのようにお知りになりましたか？
-                  <ul className='my-4 w-4/5 mx-auto md:max-w-[60%]'>
+                  <ul className='my-4 w-4/5 mx-auto md:max-w-[90%]'>
                     <li>
-                      1) YahooやGoogleなどの検索
+                      1. YahooやGoogleなどの検索
                     </li>
                     <li>
-                      2) 広告
+                      2. 広告
                     </li>
                     <li>
-                      3) ご紹介
+                      3. ご紹介
                     </li>
                     <li>
-                      4) その他
+                      4. その他
                     </li>
                   </ul>
                 </li>
