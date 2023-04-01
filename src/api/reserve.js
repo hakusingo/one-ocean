@@ -1,7 +1,8 @@
 export default async function formHandler(req, res) {
   
   const sgMail = require('@sendgrid/mail');
-  sgMail.setApiKey(process.env.SENDGRID_APIKEY);
+  sgMail.setApiKey("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");
+  // sgMail.setApiKey(process.env.SENDGRID_APIKEY);
 
   const { method, body } = req;
 
